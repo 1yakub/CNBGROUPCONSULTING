@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CNB Brand Custom Components */
+@layer components {
+  .cnb-btn-primary {
+    @apply bg-cnb-primary hover:bg-blue-800 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg;
+  }
+  
+  .cnb-btn-secondary {
+    @apply bg-cnb-secondary hover:bg-yellow-500 text-cnb-dark font-semibold py-2 px-6 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg;
+  }
+  
+  .cnb-btn-outline {
+    @apply border-2 border-cnb-primary text-cnb-primary hover:bg-cnb-primary hover:text-white font-semibold py-2 px-6 rounded-lg transition-all duration-200;
+  }
+  
+  .cnb-card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6;
+  }
+  
+  .cnb-hero-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-cnb-dark leading-tight;
+  }
+  
+  .cnb-section-title {
+    @apply text-3xl md:text-4xl font-bold text-cnb-dark mb-6;
+  }
+  
+  .cnb-form-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cnb-primary focus:border-transparent transition-all duration-200;
+  }
+  
+  .cnb-form-textarea {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cnb-primary focus:border-transparent transition-all duration-200 resize-y;
+  }
+  
+  .cnb-pricing-card {
+    @apply bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 relative;
+  }
+  
+  .cnb-pricing-popular {
+    @apply ring-4 ring-cnb-secondary transform scale-105;
+  }
+  
+  .cnb-faq-item {
+    @apply border-b border-gray-200 last:border-b-0;
+  }
+  
+  .cnb-service-feature {
+    @apply flex items-start space-x-3 p-4 rounded-lg hover:bg-gray-50 transition-colors duration-200;
+  }
+  
+  .cnb-testimonial {
+    @apply bg-cnb-light rounded-xl p-6 shadow-md;
+  }
+  
+  .cnb-nav-link {
+    @apply text-cnb-dark hover:text-cnb-primary transition-colors duration-200 font-medium;
+  }
+  
+  .cnb-footer-link {
+    @apply text-gray-600 hover:text-cnb-primary transition-colors duration-200;
+  }
+}
+
+/* CNB Brand Utilities */
+@layer utilities {
+  .text-gradient-cnb {
+    background: linear-gradient(135deg, theme('colors.cnb-primary'), theme('colors.cnb-secondary'));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-cnb {
+    background: linear-gradient(135deg, theme('colors.cnb-primary'), theme('colors.cnb-secondary'));
+  }
+  
+  .bg-gradient-dark {
+    background: linear-gradient(135deg, theme('colors.cnb-dark'), theme('colors.gray.800'));
+  }
+  
+}
+
+/* Custom animations for interactivity */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus states for accessibility */
+.cnb-focus {
+  @apply focus:outline-none focus:ring-2 focus:ring-cnb-primary focus:ring-offset-2;
+}
+
+

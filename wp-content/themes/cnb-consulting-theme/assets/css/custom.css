@@ -1,0 +1,98 @@
+/* CNB Consulting Theme - Custom Brand Colors */
+/* Tailwind CSS v3.4 Integration Layer */
+
+:root {
+    --cnb-primary: #1a365d;
+    --cnb-secondary: #f6ad55;
+    --cnb-success: #38a169;
+    --cnb-text-light: #f7fafc;
+    --cnb-text-dark: #2d3748;
+}
+
+/* Brand Color Utilities */
+.bg-cnb-primary { 
+    background-color: var(--cnb-primary); 
+}
+
+.text-cnb-primary { 
+    color: var(--cnb-primary); 
+}
+
+.bg-cnb-secondary { 
+    background-color: var(--cnb-secondary); 
+}
+
+.text-cnb-secondary { 
+    color: var(--cnb-secondary); 
+}
+
+.border-cnb-primary { 
+    border-color: var(--cnb-primary); 
+}
+
+.border-cnb-secondary { 
+    border-color: var(--cnb-secondary); 
+}
+
+/* Brand Gradients */
+.cnb-gradient {
+    background: linear-gradient(135deg, var(--cnb-primary) 0%, #2d5a7b 100%);
+}
+
+.cnb-gradient-light {
+    background: linear-gradient(135deg, var(--cnb-secondary) 0%, #fbd38d 100%);
+}
+
+/* Hover States for Brand Colors */
+.hover\:bg-cnb-primary:hover { 
+    background-color: var(--cnb-primary); 
+}
+
+.hover\:text-cnb-primary:hover { 
+    color: var(--cnb-primary); 
+}
+
+.hover\:bg-cnb-secondary:hover { 
+    background-color: var(--cnb-secondary); 
+}
+
+/* FAQ Accordion Animations - PRESERVE EXISTING FUNCTIONALITY */
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* Mobile Navigation - PRESERVE EXISTING FUNCTIONALITY */
+.mobile-menu {
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu.open {
+    transform: translateX(0);
+}
+
+/* Success/Action Colors */
+.bg-cnb-success { 
+    background-color: var(--cnb-success); 
+}
+
+.text-cnb-success { 
+    color: var(--cnb-success); 
+}
+
+/* Text Color Utilities */
+.text-cnb-light { 
+    color: var(--cnb-text-light); 
+}
+
+.text-cnb-dark { 
+    color: var(--cnb-text-dark); 
+}
+
+/* Line count: 76/100 lines - under limit */

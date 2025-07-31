@@ -1,0 +1,11 @@
+{
+  "app": {
+    "file": "assets/index-DR7iJmeQ.js",
+    "src": "resources/scripts/app.js",
+    "css": ["assets/index-fNCE5DMw.css"]
+  },
+  "editor": {
+    "file": "assets/index-DR7iJmeQ.js",
+    "src": "resources/scripts/editor.js"
+  }
+}

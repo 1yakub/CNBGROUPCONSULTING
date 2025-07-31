@@ -1,0 +1,65 @@
+button turn to green with transition effect but dont scale. btw i can see that in home page the hero sections 2 button Start Your Business Today
+Free Consultation scales and on over and have good effect, why that is working but not our incorporate now? i think analzyzing this could lead to something good.
+
+module.esm.js:421 Alpine Expression Error: Invalid or unexpected token
+
+Expression: "{ '-rotate-45
+                        -translate-y-1.5': mobileMenuOpen }"
+
+ <span class=​"w-6 h-0.5 bg-slate-300 transition-all duration-300" :class=​"{ '-rotate-45
+                        -translate-y-1.5':​ mobileMenuOpen }​">​</span>​
+X @ module.esm.js:421
+Show 1 more frame
+Show less
+module.esm.js:425 Uncaught SyntaxError: Invalid or unexpected token
+    at new AsyncFunction (<anonymous>)
+    at module.esm.js:473:14
+    at Mr (module.esm.js:478:1)
+    at Ir (module.esm.js:484:14)
+    at Ut (module.esm.js:453:109)
+    at v (module.esm.js:443:10)
+    at Function.<anonymous> (module.esm.js:2104:19)
+    at n (module.esm.js:577:46)
+    at r (module.esm.js:582:5)
+    at Pr (module.esm.js:585:3)
+main.js:209 Uncaught TypeError: A.data(...) is not a function
+    at HTMLDocument.<anonymous> (main.js:209:34)
+testimonial-3.jpg:1 
+        
+        
+       Failed to load resource: the server responded with a status of 404 (Not Found)
+testimonial-1.jpg:1 
+        
+        
+       Failed to load resource: the server responded with a status of 404 (Not Found)
+testimonial-2.jpg:1 
+        
+        
+       Failed to load resource: the server responded with a status of 404 (Not Found)
+CNBGROUPCONSULTING/:154 === HOVER IN ===
+CNBGROUPCONSULTING/:154 Classes before: bg-gradient-to-r from-cnb-primary to-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold hover:from-blue-700 hover:to-cnb-primary shadow-lg btn-hover-normal
+CNBGROUPCONSULTING/:154 Classes after: bg-gradient-to-r from-cnb-primary to-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold hover:from-blue-700 hover:to-cnb-primary shadow-lg btn-hover-active
+CNBGROUPCONSULTING/:154 Computed transform: matrix(1, 0, 0, 1, 0, 0)
+CNBGROUPCONSULTING/:154 Computed transition: all 0.3s ease 0s
+CNBGROUPCONSULTING/:154 === HOVER OUT ===
+CNBGROUPCONSULTING/:154 Classes before: bg-gradient-to-r from-cnb-primary to-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold hover:from-blue-700 hover:to-cnb-primary shadow-lg btn-hover-active
+CNBGROUPCONSULTING/:154 Classes after: bg-gradient-to-r from-cnb-primary to-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold hover:from-blue-700 hover:to-cnb-primary shadow-lg btn-hover-normal
+CNBGROUPCONSULTING/:154 Computed transform: matrix(1.05, 0, 0, 1.05, 0, -4)
+CNBGROUPCONSULTING/:154 === HOVER IN ===
+CNBGROUPCONSULTING/:154 Classes before: bg-gradient-to-r from-cnb-primary to-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold hover:from-blue-700 hover:to-cnb-primary shadow-lg btn-hover-normal
+CNBGROUPCONSULTING/:154 Classes after: bg-gradient-to-r from-cnb-primary to-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold hover:from-blue-700 hover:to-cnb-primary shadow-lg btn-hover-active
+CNBGROUPCONSULTING/:154 Computed transform: matrix(1, 0, 0, 1, 0, 0)
+CNBGROUPCONSULTING/:154 Computed transition: all 0.3s ease 0s
+CNBGROUPCONSULTING/:154 === HOVER OUT ===
+CNBGROUPCONSULTING/:154 Classes before: bg-gradient-to-r from-cnb-primary to-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold hover:from-blue-700 hover:to-cnb-primary shadow-lg btn-hover-active
+CNBGROUPCONSULTING/:154 Classes after: bg-gradient-to-r from-cnb-primary to-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold hover:from-blue-700 hover:to-cnb-primary shadow-lg btn-hover-normal
+CNBGROUPCONSULTING/:154 Computed transform: matrix(1.05, 0, 0, 1.05, 0, -4)
+CNBGROUPCONSULTING/:154 === HOVER IN ===
+CNBGROUPCONSULTING/:154 Classes before: bg-gradient-to-r from-cnb-primary to-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold hover:from-blue-700 hover:to-cnb-primary shadow-lg btn-hover-normal
+CNBGROUPCONSULTING/:154 Classes after: bg-gradient-to-r from-cnb-primary to-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold hover:from-blue-700 hover:to-cnb-primary shadow-lg btn-hover-active
+CNBGROUPCONSULTING/:154 Computed transform: matrix(1, 0, 0, 1, 0, 0)
+CNBGROUPCONSULTING/:154 Computed transition: all 0.3s ease 0s
+CNBGROUPCONSULTING/:154 === HOVER OUT ===
+CNBGROUPCONSULTING/:154 Classes before: bg-gradient-to-r from-cnb-primary to-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold hover:from-blue-700 hover:to-cnb-primary shadow-lg btn-hover-active
+CNBGROUPCONSULTING/:154 Classes after: bg-gradient-to-r from-cnb-primary to-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold hover:from-blue-700 hover:to-cnb-primary shadow-lg btn-hover-normal
+CNBGROUPCONSULTING/:154 Computed transform: matrix(1.05, 0, 0, 1.05, 0, -4)

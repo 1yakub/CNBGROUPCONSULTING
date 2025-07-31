@@ -1,0 +1,418 @@
+/*
+Responsive Design Framework for CNB Consulting Theme
+Mobile-first approach with progressive enhancement
+*/
+
+/* ==========================================================================
+   MOBILE FIRST BASE (320px+)
+   ========================================================================== */
+
+/* Already defined in main.css and components.css */
+
+/* ==========================================================================
+   SMALL MOBILE (375px+)
+   ========================================================================== */
+
+@media (min-width: 375px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================================================================
+   LARGE MOBILE (425px+)
+   ========================================================================== */
+
+@media (min-width: 425px) {
+    .hero-content h1 {
+        font-size: 2.25rem;
+    }
+    
+}
+
+/* ==========================================================================
+   TABLET PORTRAIT (768px+)
+   ========================================================================== */
+
+@media (min-width: 768px) {
+    /* Typography scaling */
+    html {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    /* Container adjustments */
+    .container {
+        padding: 0 var(--spacing-lg);
+        max-width: var(--container-md);
+    }
+    
+    /* Header improvements */
+    .header-top .contact-items {
+        display: flex;
+    }
+    
+    .contact-items {
+        gap: var(--spacing-xl);
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+    
+    .primary-menu {
+        display: flex !important;
+        position: static;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        flex-direction: row;
+        gap: var(--spacing-lg);
+    }
+    
+    /* Hero section */
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-actions {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    /* Service cards */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+    }
+    
+    /* Pricing tables */
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+    }
+    
+    /* Footer */
+    .footer-widgets {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-2xl);
+    }
+    
+    .footer-bottom {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .trust-badges {
+        flex-direction: row;
+        gap: var(--spacing-lg);
+    }
+    
+    /* Stats section */
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* Process steps */
+    .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Contact form */
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* CTA actions */
+    .cta-actions {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* ==========================================================================
+   TABLET LANDSCAPE (1024px+)
+   ========================================================================== */
+
+@media (min-width: 1024px) {
+    /* Container scaling */
+    .container {
+        max-width: var(--container-lg);
+        padding: 0 var(--spacing-xl);
+    }
+    
+    /* Typography enhancements */
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .hero-content .lead {
+        font-size: 1.375rem;
+    }
+    
+    /* Layout improvements */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-widgets {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .process-steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Header enhancements */
+    .header-main {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .site-logo-text .site-logo {
+        font-size: 2rem;
+    }
+    
+    /* Advanced grid layouts */
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+    }
+    
+    /* Enhanced spacing */
+    .hero-section {
+        padding: var(--spacing-3xl) 0 4rem;
+    }
+    
+    .stats-section {
+        padding: 4rem 0;
+    }
+    
+    .process-section {
+        padding: 4rem 0;
+    }
+    
+    .faq-section {
+        padding: 4rem 0;
+    }
+}
+
+/* ==========================================================================
+   DESKTOP (1280px+)
+   ========================================================================== */
+
+@media (min-width: 1280px) {
+    /* Container maximum width */
+    .container {
+        max-width: var(--container-xl);
+    }
+    
+    /* Enhanced typography */
+    .hero-content h1 {
+        font-size: 4rem;
+        line-height: 1.1;
+    }
+    
+    /* Advanced layouts */
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .process-steps {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* Enhanced spacing */
+    .hero-section {
+        padding: 5rem 0;
+    }
+    
+    .stats-section,
+    .process-section,
+    .faq-section,
+    .testimonials-section {
+        padding: 5rem 0;
+    }
+    
+    /* Premium spacing */
+    :root {
+        --spacing-4xl: 5rem;
+        --spacing-5xl: 6rem;
+    }
+    
+    .section-spacing {
+        padding: var(--spacing-4xl) 0;
+    }
+    
+    .section-spacing-large {
+        padding: var(--spacing-5xl) 0;
+    }
+}
+
+/* ==========================================================================
+   LARGE DESKTOP (1440px+)
+   ========================================================================== */
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-content h1 {
+        font-size: 4.5rem;
+    }
+    
+    /* Enhanced component spacing */
+    .service-card,
+    .pricing-table,
+    .testimonial-card {
+        padding: var(--spacing-2xl);
+    }
+    
+    /* Premium grid layouts */
+    .services-grid.premium {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* ==========================================================================
+   ULTRA WIDE (1920px+)
+   ========================================================================== */
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1600px;
+    }
+    
+    /* Prevent excessive scaling on very large screens */
+    .hero-content h1 {
+        font-size: 5rem;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-content .lead {
+        max-width: 800px;
+    }
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    .site-header,
+    .site-footer,
+    .menu-toggle,
+    .search-toggle,
+    .header-actions,
+    .btn,
+    .cta-section {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+    
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}
+
+/* ==========================================================================
+   HIGH DPI / RETINA DISPLAYS
+   ========================================================================== */
+
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+    /* Enhance icon quality for high DPI displays */
+    .service-icon,
+    .step-number,
+    .stat-item {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* ==========================================================================
+   REDUCED MOTION ACCESSIBILITY
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .service-card:hover {
+        transform: none;
+    }
+    
+    .faq-toggle {
+        transition: none;
+    }
+    
+    /* Allow premium button transforms even with reduced motion */
+    .btn-hover-active {
+        transition-duration: 300ms !important;
+        transform: translateY(-4px) scale(1.05) !important;
+    }
+}
+
+/* ==========================================================================
+   DARK MODE SUPPORT (Future Enhancement)
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+    /* Basic dark mode variables - can be expanded in future phases */
+    :root {
+        --dark-bg: #1a202c;
+        --dark-text: #f7fafc;
+        --dark-border: #2d3748;
+    }
+    
+    /* Note: Full dark mode implementation would be added in later phases */
+}
