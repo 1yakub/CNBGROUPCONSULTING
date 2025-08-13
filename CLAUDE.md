@@ -169,3 +169,27 @@ When developing custom functionality:
 ## Technology Selection Memory
 
 - Always use established packages and libraries instead of custom code. Use Tailwind utilities, Alpine.js components, Heroicons, and npm packages. Never reinvent wheels - find the proper library solution first.
+
+## Build Commands
+
+### Install Dependencies
+```bash
+pushd "wp-content\themes\cnb-consulting-theme" && npm install && popd
+```
+
+### Build Project (Development)
+```bash
+pushd "wp-content\themes\cnb-consulting-theme" && npm run build:dev && popd
+```
+
+### Build CSS Only
+```bash
+pushd "wp-content\themes\cnb-consulting-theme" && npm run css:build && popd
+```
+
+### Development Server
+```bash
+pushd "wp-content\themes\cnb-consulting-theme" && npm run dev && popd
+```
+
+**Note:** Use `pushd` and `popd` commands on Windows to navigate to theme directory since direct `cd` is restricted. The theme uses Vite for building and Tailwind CSS for styling.
