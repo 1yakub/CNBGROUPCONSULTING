@@ -127,21 +127,21 @@ function cnb_get_placeholder_testimonials() {
             'author' => 'Maria Rodriguez',
             'company' => 'Rodriguez Imports LLC',
             'rating' => 5,
-            'avatar' => get_template_directory_uri() . '/assets/images/testimonial-1.jpg'
+            'avatar' => 'https://ui-avatars.com/api/?name=Maria+Rodriguez&background=1e3a8a&color=fff&size=150'
         ),
         array(
             'content' => __('Professional service, fast turnaround, and excellent support. My Amazon seller account was approved within days!', 'cnb-consulting-theme'),
             'author' => 'Ahmed Hassan',
             'company' => 'Global Trade Solutions',
             'rating' => 5,
-            'avatar' => get_template_directory_uri() . '/assets/images/testimonial-2.jpg'
+            'avatar' => 'https://ui-avatars.com/api/?name=Ahmed+Hassan&background=1e3a8a&color=fff&size=150'
         ),
         array(
             'content' => __('The team guided me through every step of the process. Now my drop shipping business is compliant and thriving in the US market.', 'cnb-consulting-theme'),
             'author' => 'Li Wei Chen',
             'company' => 'Pacific Ventures Inc',
             'rating' => 5,
-            'avatar' => get_template_directory_uri() . '/assets/images/testimonial-3.jpg'
+            'avatar' => 'https://ui-avatars.com/api/?name=Li+Wei+Chen&background=1e3a8a&color=fff&size=150'
         )
     );
 }

@@ -81,11 +81,11 @@ $company_stats = cnb_get_company_info();
                 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#rate-form" class="bg-gradient-to-r from-cnb-secondary to-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-bold hover:scale-105 transition-transform shadow-xl">
+                    <a href="https://calendly.com/yakubhossain/15min" target="_blank" rel="noopener" class="bg-gradient-to-r from-cnb-secondary to-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-bold hover:scale-105 transition-transform shadow-xl">
                         Get My Custom Quote
                     </a>
-                    <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-cnb-primary hover:scale-105 transition-all">
-                        Free Consultation
+                    <a href="https://calendly.com/yakubhossain/15min" target="_blank" rel="noopener" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-cnb-primary hover:scale-105 transition-all">
+                        Book a Consultation
                     </a>
                 </div>
                 

@@ -2,7 +2,20 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:businessglobalizer.com)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(npm install)",
+      "Bash(npm --prefix \"./wp-content/themes/cnb-consulting-theme\" install)",
+      "Bash(pushd:*)",
+      "Bash(popd:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run css:build:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "mcp__chrome-mcp__chrome_navigate",
+      "mcp__chrome-mcp__chrome_console",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_take_screenshot"
     ],
     "deny": []
   }

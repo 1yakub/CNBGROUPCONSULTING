@@ -79,20 +79,11 @@
                                 the_custom_logo();
                             } else {
                             ?>
-                                <div class="flex items-center space-x-3 mb-4">
-                                    <div class="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-cnb-primary to-blue-700 rounded-lg">
-                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <a href="<?php echo esc_url(home_url('/')); ?>" 
-                                           class="text-2xl font-bold text-white hover:text-cnb-secondary transition-colors duration-200">
-                                            CNB
-                                        </a>
-                                        <p class="text-sm text-slate-300 font-medium">Group Consulting</p>
-                                    </div>
-                                </div>
+                                <a href="<?php echo esc_url(home_url('/')); ?>" class="inline-block mb-4">
+                                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/footer-logo.png'); ?>" 
+                                         alt="CNB Group Consulting" 
+                                         class="h-14 md:h-16 w-auto">
+                                </a>
                             <?php } ?>
                         </div>
                         

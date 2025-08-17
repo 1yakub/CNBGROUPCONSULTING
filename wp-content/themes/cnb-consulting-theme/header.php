@@ -29,26 +29,11 @@
                             } else {
                                 $company_info = cnb_get_company_info();
                                 ?>
-                                <div class="flex items-center space-x-3">
-                                    <!-- Premium CNB Logo with Heroicon -->
-                                    <div
-                                        class="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-cnb-primary to-blue-700 rounded-lg shadow-lg">
-                                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="flex flex-col">
-                                        <a href="<?php echo esc_url(home_url('/')); ?>" class="text-3xl font-bold
-                        text-white hover:text-cnb-secondary transition-colors duration-200 tracking-tight" rel="home">
-                                            CNB
-                                        </a>
-                                        <p class="text-sm text-slate-300 font-medium tracking-wide uppercase">Group
-                                            Consulting</p>
-                                    </div>
-                                </div>
+                                <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center" rel="home">
+                                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/cnb-logo.png'); ?>" 
+                                         alt="CNB Group Consulting" 
+                                         class="h-16 md:h-20 w-auto">
+                                </a>
                             <?php } ?>
                         </div>
 
@@ -62,8 +47,8 @@
                                         :class="{ 'rotate-45 translate-y-1.5': mobileMenuOpen }"></span>
                                     <span class="w-6 h-0.5 bg-slate-300 transition-all duration-300"
                                         :class="{ 'opacity-0': mobileMenuOpen }"></span>
-                                    <span class="w-6 h-0.5 bg-slate-300 transition-all duration-300" :class="{ '-rotate-45
-                        -translate-y-1.5': mobileMenuOpen }"></span>
+                                    <span class="w-6 h-0.5 bg-slate-300 transition-all duration-300" 
+                                        :class="{ '-rotate-45 -translate-y-1.5': mobileMenuOpen }"></span>
                                 </span>
                                 <span class="menu-text">
                                     <?php _e('Menu', 'cnb-consulting-theme'); ?>

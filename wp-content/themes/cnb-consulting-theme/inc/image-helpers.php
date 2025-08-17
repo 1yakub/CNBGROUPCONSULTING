@@ -109,12 +109,12 @@ function cnb_get_image_library() {
         
         // Team/Testimonial Images
         'client_1' => array(
-            'url' => get_template_directory_uri() . '/assets/images/client-testimonial-1.jpg',
+            'url' => 'https://ui-avatars.com/api/?name=Client+One&background=1e3a8a&color=fff&size=150',
             'alt' => 'Happy client testimonial photo',
             'size' => '150x150'
         ),
         'client_2' => array(
-            'url' => get_template_directory_uri() . '/assets/images/client-testimonial-2.jpg',
+            'url' => 'https://ui-avatars.com/api/?name=Client+Two&background=1e3a8a&color=fff&size=150',
             'alt' => 'Satisfied business owner testimonial',
             'size' => '150x150'
         ),

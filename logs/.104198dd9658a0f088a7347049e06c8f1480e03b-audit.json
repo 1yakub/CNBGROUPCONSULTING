@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\wamp64\\www\\CNBGROUPCONSULTING\\logs\\.104198dd9658a0f088a7347049e06c8f1480e03b-audit.json",
+    "files": [
+        {
+            "date": 1755047441486,
+            "name": "D:\\wamp64\\www\\CNBGROUPCONSULTING\\logs\\mcp-puppeteer-2025-08-13.log",
+            "hash": "9b691ee0923311f9a754c92770e8aeb441e479b94307934a55faa815a6f52387"
+        },
+        {
+            "date": 1755422256047,
+            "name": "D:\\wamp64\\www\\CNBGROUPCONSULTING\\logs\\mcp-puppeteer-2025-08-17.log",
+            "hash": "15a64c0df725767fc35044b0efba50ce981442e164f59c5b1b1549e5cee7244e"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -50,8 +50,8 @@ $services = cnb_get_placeholder_services();
                     </p>
                     
                     <div class="mb-6">
-                        <a href="#rate-form" class="inline-flex items-center px-6 py-3 bg-cnb-secondary text-gray-900 rounded-lg font-semibold hover:bg-yellow-400 hover:scale-105 transition-all shadow-lg">
-                            <span>Get My Rate</span>
+                        <a href="https://calendly.com/yakubhossain/15min" target="_blank" rel="noopener" class="inline-flex items-center px-6 py-3 bg-cnb-secondary text-gray-900 rounded-lg font-semibold hover:bg-yellow-400 hover:scale-105 transition-all shadow-lg">
+                            <span>Book Consultation</span>
                             <!-- Heroicon: arrow-right -->
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
