@@ -269,174 +269,8 @@ function cnb_consulting_custom_logo_setup() {
 }
 add_action('after_setup_theme', 'cnb_consulting_custom_logo_setup');
 
-/**
- * Create sample services for testing (runs once on theme activation)
- */
-function cnb_create_sample_services() {
-    // Only run once
-    if (get_option('cnb_sample_services_created')) {
-        return;
-    }
-
-    // Ensure post types are registered
-    cnb_register_services_post_type();
-    cnb_register_service_categories_taxonomy();
-    cnb_create_default_service_categories();
-
-    // Get Company Formation category
-    $category = get_term_by('name', 'Company Formation', 'service_category');
-    $category_id = $category ? $category->term_id : 0;
-
-    // Create U.S. Company Formation Service
-    $post_data_1 = array(
-        'post_title'    => 'U.S. Company Formation',
-        'post_content'  => 'Start your American business dream with our comprehensive U.S. company formation service. We handle all the paperwork, legal requirements, and state filings to establish your LLC or Corporation quickly and efficiently.',
-        'post_excerpt'  => 'Complete U.S. company formation service with expert guidance and fast processing.',
-        'post_status'   => 'publish',
-        'post_type'     => 'cnb_service',
-        'post_author'   => 1,
-    );
-    
-    $post_id_1 = wp_insert_post($post_data_1);
-    
-    if ($post_id_1 && !is_wp_error($post_id_1)) {
-        // Assign category
-        if ($category_id) {
-            wp_set_post_terms($post_id_1, array($category_id), 'service_category');
-        }
-        
-        // Service Details
-        update_post_meta($post_id_1, '_cnb_hero_subtitle', 'Start Your American Business Journey Today');
-        update_post_meta($post_id_1, '_cnb_value_proposition', 'Get your U.S. company registered in all 50 states with guaranteed approval.');
-        update_post_meta($post_id_1, '_cnb_processing_time', '3-5 business days');
-        update_post_meta($post_id_1, '_cnb_success_rate', '99.9%');
-        update_post_meta($post_id_1, '_cnb_guarantee_period', '30 days money-back');
-        
-        // Pricing
-        update_post_meta($post_id_1, '_cnb_basic_name', 'Basic Formation');
-        update_post_meta($post_id_1, '_cnb_basic_price', '$199');
-        update_post_meta($post_id_1, '_cnb_basic_features', "State filing included\nFederal EIN number\nBasic compliance documents\nEmail support");
-        
-        update_post_meta($post_id_1, '_cnb_standard_name', 'Standard Formation');
-        update_post_meta($post_id_1, '_cnb_standard_price', '$399');
-        update_post_meta($post_id_1, '_cnb_standard_features', "Everything in Basic\nRegistered agent (1 year)\nOperating agreement\nPriority processing\nPhone support");
-        update_post_meta($post_id_1, '_cnb_standard_popular', 1);
-        
-        update_post_meta($post_id_1, '_cnb_premium_name', 'Premium Formation');
-        update_post_meta($post_id_1, '_cnb_premium_price', '$699');
-        update_post_meta($post_id_1, '_cnb_premium_features', "Everything in Standard\nExpedited 24-hour filing\nFree registered agent (2 years)\nBusiness bank account setup\nDedicated account manager");
-        
-        // Process Steps
-        $process_steps_1 = array(
-            array('title' => 'Information Collection', 'description' => 'We gather your business information through our secure online form.', 'duration' => '30 minutes'),
-            array('title' => 'Document Preparation', 'description' => 'Our legal experts prepare all required formation documents.', 'duration' => '1-2 business days'),
-            array('title' => 'State Filing', 'description' => 'We submit your formation documents to the appropriate state agency.', 'duration' => '1-3 business days'),
-            array('title' => 'Document Delivery', 'description' => 'Once approved, we deliver your official formation documents.', 'duration' => 'Same day')
-        );
-        update_post_meta($post_id_1, '_cnb_process_steps', $process_steps_1);
-        
-        // FAQ Items
-        $faq_items_1 = array(
-            array('question' => 'How long does the formation process take?', 'answer' => 'Most state filings are completed within 3-5 business days.'),
-            array('question' => 'Which states can I incorporate in?', 'answer' => 'We can form your company in all 50 U.S. states.'),
-            array('question' => 'Do I need to be a U.S. citizen?', 'answer' => 'No, foreign nationals can form U.S. companies.'),
-            array('question' => 'What documents will I receive?', 'answer' => 'You will receive Articles of Incorporation, EIN confirmation, and operating agreement.'),
-            array('question' => 'Is there a money-back guarantee?', 'answer' => 'Yes, we offer a 30-day money-back guarantee.')
-        );
-        update_post_meta($post_id_1, '_cnb_faq_items', $faq_items_1);
-        
-        // Benefits
-        $benefits_1 = array(
-            array('title' => 'Expert Legal Guidance', 'description' => 'Our experienced attorneys ensure your company is formed correctly.'),
-            array('title' => 'Fast Processing', 'description' => 'Get your company registered in 3-5 business days.'),
-            array('title' => 'All States Available', 'description' => 'Form your company in any of the 50 U.S. states.'),
-            array('title' => 'Complete Package', 'description' => 'Receive all necessary documents and ongoing compliance support.'),
-            array('title' => 'Registered Agent Included', 'description' => 'Free registered agent service for one year.'),
-            array('title' => '99.9% Success Rate', 'description' => 'Our proven process ensures approval on the first attempt.')
-        );
-        update_post_meta($post_id_1, '_cnb_benefits', $benefits_1);
-        
-        // CTA Information
-        update_post_meta($post_id_1, '_cnb_primary_cta_text', 'Start My Company Formation');
-        update_post_meta($post_id_1, '_cnb_primary_cta_link', '#pricing');
-        update_post_meta($post_id_1, '_cnb_secondary_cta_text', 'Free Consultation');
-        update_post_meta($post_id_1, '_cnb_secondary_cta_link', '#contact');
-    }
-
-    // Create EIN Service
-    $post_data_2 = array(
-        'post_title'    => 'EIN Service',
-        'post_content'  => 'Get your Federal Employer Identification Number (EIN) quickly and easily. Required for business banking, hiring employees, and tax purposes, our EIN service ensures you receive your tax ID number in just 1-2 business days.',
-        'post_excerpt'  => 'Fast EIN application service with guaranteed approval in 1-2 business days.',
-        'post_status'   => 'publish',
-        'post_type'     => 'cnb_service',
-        'post_author'   => 1,
-    );
-    
-    $post_id_2 = wp_insert_post($post_data_2);
-    
-    if ($post_id_2 && !is_wp_error($post_id_2)) {
-        // Assign category
-        if ($category_id) {
-            wp_set_post_terms($post_id_2, array($category_id), 'service_category');
-        }
-        
-        // Service Details
-        update_post_meta($post_id_2, '_cnb_hero_subtitle', 'Get Your Federal Tax ID Number Fast');
-        update_post_meta($post_id_2, '_cnb_value_proposition', 'Avoid the IRS phone queues and get your EIN in 1-2 business days.');
-        update_post_meta($post_id_2, '_cnb_processing_time', '1-2 business days');
-        update_post_meta($post_id_2, '_cnb_success_rate', '100%');
-        update_post_meta($post_id_2, '_cnb_guarantee_period', '24-hour guarantee');
-        
-        // Pricing (Single package)
-        update_post_meta($post_id_2, '_cnb_standard_name', 'EIN Application Service');
-        update_post_meta($post_id_2, '_cnb_standard_price', '$97');
-        update_post_meta($post_id_2, '_cnb_standard_features', "Complete IRS Form SS-4 preparation\nDirect submission to IRS\nGuaranteed approval\n1-2 business day processing\nOfficial EIN confirmation letter\nEmail and phone support");
-        update_post_meta($post_id_2, '_cnb_standard_popular', 1);
-        
-        // Process Steps
-        $process_steps_2 = array(
-            array('title' => 'Complete Application', 'description' => 'Provide your business information through our secure online form.', 'duration' => '5 minutes'),
-            array('title' => 'Document Review', 'description' => 'Our experts review your application and prepare the official IRS Form SS-4.', 'duration' => '2-4 hours'),
-            array('title' => 'IRS Submission', 'description' => 'We submit your application directly to the IRS and monitor the approval process.', 'duration' => '1-2 business days'),
-            array('title' => 'EIN Delivery', 'description' => 'Receive your official EIN number and confirmation letter via email.', 'duration' => 'Instant')
-        );
-        update_post_meta($post_id_2, '_cnb_process_steps', $process_steps_2);
-        
-        // FAQ Items
-        $faq_items_2 = array(
-            array('question' => 'What is an EIN and why do I need it?', 'answer' => 'An EIN is a federal tax ID required for business banking, hiring employees, and filing taxes.'),
-            array('question' => 'How quickly will I receive my EIN?', 'answer' => 'Most EIN applications are approved within 1-2 business days.'),
-            array('question' => 'Can I apply for an EIN myself?', 'answer' => 'Yes, but it often involves long phone wait times with the IRS.'),
-            array('question' => 'Do I need an EIN if I am a sole proprietor?', 'answer' => 'Most banks require an EIN to open a business bank account.'),
-            array('question' => 'What if my application is rejected?', 'answer' => 'EIN applications are rarely rejected when properly completed.')
-        );
-        update_post_meta($post_id_2, '_cnb_faq_items', $faq_items_2);
-        
-        // Benefits
-        $benefits_2 = array(
-            array('title' => 'Lightning Fast Processing', 'description' => 'Get your EIN in just 1-2 business days instead of waiting weeks.'),
-            array('title' => 'Skip the Phone Queues', 'description' => 'Avoid hours of waiting on hold with the IRS.'),
-            array('title' => '100% Approval Guarantee', 'description' => 'Our expert preparation ensures approval on the first submission.'),
-            array('title' => 'Official Documentation', 'description' => 'Receive your official EIN confirmation letter from the IRS.'),
-            array('title' => 'Expert Support', 'description' => 'Our tax professionals are available to answer questions.'),
-            array('title' => 'Secure Process', 'description' => 'Your sensitive business information is protected with bank-level security.')
-        );
-        update_post_meta($post_id_2, '_cnb_benefits', $benefits_2);
-        
-        // CTA Information
-        update_post_meta($post_id_2, '_cnb_primary_cta_text', 'Get My EIN Now');
-        update_post_meta($post_id_2, '_cnb_primary_cta_link', '#pricing');
-        update_post_meta($post_id_2, '_cnb_secondary_cta_text', 'Ask Questions');
-        update_post_meta($post_id_2, '_cnb_secondary_cta_link', '#contact');
-    }
-
-    // Mark as created
-    update_option('cnb_sample_services_created', true);
-    
-    // Flush rewrite rules
-    flush_rewrite_rules();
-}
+// Removed custom post type sample creation function
+// All services are now managed through hard-coded page templates
 
 /**
  * Create all required WordPress pages
@@ -456,7 +290,7 @@ function cnb_create_all_pages() {
         'services' => array(
             'title' => 'Services',
             'content' => 'Our comprehensive business services help you establish and grow your company in the United States.',
-            'template' => 'page-services.php'
+            'template' => 'page-services.php'  // This will use Template Name: Services Page
         ),
         'about' => array(
             'title' => 'About Us',
@@ -582,10 +416,15 @@ function cnb_consulting_theme_activation() {
     // Create all required pages
     cnb_create_all_pages();
     
-    // Create sample services for testing
-    cnb_create_sample_services();
-    
     // Flush rewrite rules
     flush_rewrite_rules();
 }
 add_action('after_switch_theme', 'cnb_consulting_theme_activation');
+
+// Also run on init to ensure pages exist (remove this after first run on production)
+add_action('init', function() {
+    if (!get_option('cnb_pages_created')) {
+        cnb_create_all_pages();
+        flush_rewrite_rules();
+    }
+});

@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for Services Overview Page
+ * Template Name: Services Page
+ * Description: Template for displaying the services overview page
  * 
  * @package CNB_Consulting_Theme
  */
