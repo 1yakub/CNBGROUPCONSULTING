@@ -12,8 +12,6 @@ $company_stats = cnb_get_company_info();
 
 <section class="relative bg-gradient-to-br from-cnb-primary via-blue-800 to-blue-900 text-white py-20 lg:py-32 overflow-hidden">
     
-    <!-- Background Image -->
-    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1926&q=80')] bg-cover bg-center opacity-20"></div>
     
     <!-- Animated Background -->
     <div class="absolute inset-0">
