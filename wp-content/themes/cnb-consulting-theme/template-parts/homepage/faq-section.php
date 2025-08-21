@@ -44,7 +44,7 @@ $faqs = cnb_get_homepage_faqs();
                 <h3 class="text-2xl font-bold text-gray-900 mb-4"><?php _e('Still Have Questions?', 'cnb-consulting-theme'); ?></h3>
                 <p class="text-gray-600 mb-8"><?php _e('Our expert team is here to help. Get personalized answers to your specific business formation needs.', 'cnb-consulting-theme'); ?></p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="bg-cnb-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+                    <a href="<?php echo esc_url(cnb_get_cta_link('contact-experts')); ?>" target="_blank" rel="noopener" class="bg-cnb-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
                         <?php _e('Contact Our Experts', 'cnb-consulting-theme'); ?>
                     </a>
                     <a href="<?php 

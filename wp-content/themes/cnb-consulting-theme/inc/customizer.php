@@ -34,7 +34,7 @@ function cnb_consulting_customize_register($wp_customize) {
     
     // Phone Number
     $wp_customize->add_setting('cnb_phone', array(
-        'default'           => '+1 (555) 123-4567',
+        'default'           => '+1 (561) 385-0430',
         'sanitize_callback' => 'sanitize_text_field',
         'transport'         => 'refresh',
     ));
@@ -47,7 +47,7 @@ function cnb_consulting_customize_register($wp_customize) {
     
     // Email Address
     $wp_customize->add_setting('cnb_email', array(
-        'default'           => 'info@cnbgroupconsulting.com',
+        'default'           => 'cnbgroupconsultingllc@gmail.com',
         'sanitize_callback' => 'sanitize_email',
         'transport'         => 'refresh',
     ));
@@ -60,7 +60,7 @@ function cnb_consulting_customize_register($wp_customize) {
     
     // WhatsApp Number
     $wp_customize->add_setting('cnb_whatsapp', array(
-        'default'           => '+1 (555) 123-4567',
+        'default'           => '+1 (561) 385-0430',
         'sanitize_callback' => 'sanitize_text_field',
         'transport'         => 'refresh',
     ));
@@ -71,9 +71,23 @@ function cnb_consulting_customize_register($wp_customize) {
         'type'     => 'text',
     ));
     
+    // Calendly URL
+    $wp_customize->add_setting('cnb_calendly_url', array(
+        'default'           => 'https://calendly.com/cnbgroupconsultingllc/30min',
+        'sanitize_callback' => 'esc_url_raw',
+        'transport'         => 'refresh',
+    ));
+    
+    $wp_customize->add_control('cnb_calendly_url', array(
+        'label'    => __('Calendly Booking URL', 'cnb-consulting-theme'),
+        'section'  => 'cnb_contact_info',
+        'type'     => 'url',
+        'description' => __('Your Calendly booking link for consultations', 'cnb-consulting-theme'),
+    ));
+    
     // Business Address
     $wp_customize->add_setting('cnb_address', array(
-        'default'           => '123 Business Ave, Suite 100, New York, NY 10001',
+        'default'           => '5681 Boynton Bay Cir, Boynton Beach, FL 33437',
         'sanitize_callback' => 'sanitize_textarea_field',
         'transport'         => 'refresh',
     ));

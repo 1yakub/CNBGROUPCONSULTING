@@ -15,11 +15,11 @@
         </p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a href="tel:+1-555-CNB-GROUP" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-bold transition transform hover:scale-105">
-                Call Now: (555) CNB-GROUP
+            <a href="mailto:cnbgroupconsultingllc@gmail.com" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-bold transition transform hover:scale-105">
+                Email Us
             </a>
-            <a href="mailto:itin@cnbgroupconsulting.com" class="bg-white bg-opacity-10 text-white border-2 border-white border-opacity-30 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-20 transition">
-                Email: itin@cnbgroupconsulting.com
+            <a href="mailto:cnbgroupconsultingllc@gmail.com" class="bg-white bg-opacity-10 text-white border-2 border-white border-opacity-30 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-20 transition">
+                Email: cnbgroupconsultingllc@gmail.com
             </a>
         </div>
 

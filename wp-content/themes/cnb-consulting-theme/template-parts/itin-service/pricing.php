@@ -46,7 +46,7 @@
                     </li>
                 </ul>
                 
-                <a href="#contact" class="block w-full bg-white border-2 border-cnb-primary text-cnb-primary py-3 px-6 rounded-lg font-semibold hover:bg-cnb-primary hover:text-white transition">
+                <a href="<?php echo esc_url(cnb_get_cta_link('choose-basic')); ?>" class="block w-full bg-white border-2 border-cnb-primary text-cnb-primary py-3 px-6 rounded-lg font-semibold hover:bg-cnb-primary hover:text-white transition">
                     Choose Basic
                 </a>
             </div>
@@ -92,7 +92,7 @@
                     </li>
                 </ul>
                 
-                <a href="#contact" class="block w-full bg-cnb-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="<?php echo esc_url(cnb_get_cta_link('choose-complete')); ?>" class="block w-full bg-cnb-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition">
                     Choose Complete
                 </a>
             </div>

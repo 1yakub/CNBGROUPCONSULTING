@@ -50,7 +50,7 @@ $services = cnb_get_placeholder_services();
                     </p>
                     
                     <div class="mb-6">
-                        <a href="https://calendly.com/yakubhossain/15min" target="_blank" rel="noopener" class="inline-flex items-center px-6 py-3 bg-cnb-secondary text-gray-900 rounded-lg font-semibold hover:bg-yellow-400 hover:scale-105 transition-all shadow-lg">
+                        <a href="<?php echo esc_url(cnb_get_cta_link('book-consultation')); ?>" target="_blank" rel="noopener" class="inline-flex items-center px-6 py-3 bg-cnb-secondary text-gray-900 rounded-lg font-semibold hover:bg-yellow-400 hover:scale-105 transition-all shadow-lg">
                             <span>Book Consultation</span>
                             <!-- Heroicon: arrow-right -->
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -38,7 +38,7 @@
                     </li>
                 </ul>
                 
-                <a href="#contact" class="block w-full bg-white border-2 border-cnb-primary text-cnb-primary py-3 px-6 rounded-lg font-semibold hover:bg-cnb-primary hover:text-white transition">
+                <a href="<?php echo esc_url(cnb_get_cta_link('choose-starter')); ?>" class="block w-full bg-white border-2 border-cnb-primary text-cnb-primary py-3 px-6 rounded-lg font-semibold hover:bg-cnb-primary hover:text-white transition">
                     Choose Starter
                 </a>
             </div>
@@ -84,7 +84,7 @@
                     </li>
                 </ul>
                 
-                <a href="#contact" class="block w-full bg-cnb-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="<?php echo esc_url(cnb_get_cta_link('choose-professional')); ?>" class="block w-full bg-cnb-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition">
                     Choose Professional
                 </a>
             </div>
@@ -124,7 +124,7 @@
                     </li>
                 </ul>
                 
-                <a href="#contact" class="block w-full bg-white border-2 border-purple-500 text-purple-500 py-3 px-6 rounded-lg font-semibold hover:bg-purple-500 hover:text-white transition">
+                <a href="<?php echo esc_url(cnb_get_cta_link('choose-enterprise')); ?>" class="block w-full bg-white border-2 border-purple-500 text-purple-500 py-3 px-6 rounded-lg font-semibold hover:bg-purple-500 hover:text-white transition">
                     Choose Enterprise
                 </a>
             </div>

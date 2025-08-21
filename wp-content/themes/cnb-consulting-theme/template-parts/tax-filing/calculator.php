@@ -82,7 +82,7 @@
                         </div>
                         
                         <div class="mt-6">
-                            <a href="#contact" class="w-full bg-cnb-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition text-center block">
+                            <a href="<?php echo esc_url(cnb_get_cta_link('schedule-consultation')); ?>" class="w-full bg-cnb-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition text-center block">
                                 Schedule My Consultation
                             </a>
                         </div>

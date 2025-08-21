@@ -24,7 +24,7 @@
                 </div>
                 
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#pricing" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-bold transition transform hover:scale-105 text-center">
+                    <a href="<?php echo esc_url(cnb_get_cta_link('pricing')); ?>" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-bold transition transform hover:scale-105 text-center">
                         Get DUNS - $149
                     </a>
                     <a href="#benefits" class="bg-white bg-opacity-10 text-white border-2 border-white border-opacity-30 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-20 transition text-center">

@@ -138,7 +138,7 @@
                         </nav><!-- #site-navigation -->
 
                         <div class="hidden md:flex items-center">
-                            <a href="<?php echo esc_url(home_url('/company-formation/')); ?>"
+                            <a href="<?php echo esc_url(cnb_get_cta_link('incorporate-now')); ?>"
                                class="group relative inline-flex items-center px-6 py-3 font-semibold text-white 
                                       bg-gradient-to-r from-cnb-primary to-blue-700 
                                       rounded-lg shadow-lg overflow-hidden

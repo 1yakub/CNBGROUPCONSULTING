@@ -19,27 +19,28 @@
     <div class="space-y-6">
         <div class="flex items-start space-x-4">
             <div class="w-12 h-12 bg-cnb-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-white text-xl">📞</span>
+                <span class="text-white text-xl">📧</span>
             </div>
             <div>
-                <h3 class="font-semibold text-gray-900 mb-1">Phone</h3>
-                <p class="text-gray-600">Call us for immediate assistance</p>
-                <a href="tel:+1-555-CNB-GROUP" class="text-cnb-primary font-semibold hover:underline">
-                    +1 (555) CNB-GROUP
+                <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
+                <p class="text-gray-600">Send us a message for immediate assistance</p>
+                <a href="mailto:cnbgroupconsultingllc@gmail.com" class="text-cnb-primary font-semibold hover:underline">
+                    cnbgroupconsultingllc@gmail.com
                 </a>
             </div>
         </div>
 
         <div class="flex items-start space-x-4">
             <div class="w-12 h-12 bg-cnb-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-white text-xl">✉️</span>
+                <span class="text-white text-xl">📍</span>
             </div>
             <div>
-                <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
-                <p class="text-gray-600">Send us a detailed message</p>
-                <a href="mailto:info@cnbgroupconsulting.com" class="text-cnb-primary font-semibold hover:underline">
-                    info@cnbgroupconsulting.com
-                </a>
+                <h3 class="font-semibold text-gray-900 mb-1">Address</h3>
+                <p class="text-gray-600">Visit us at our office</p>
+                <p class="text-cnb-primary font-semibold">
+                    5681 Boynton Bay Cir<br>
+                    Boynton Beach, FL 33437
+                </p>
             </div>
         </div>
 
@@ -50,7 +51,7 @@
             <div>
                 <h3 class="font-semibold text-gray-900 mb-1">WhatsApp</h3>
                 <p class="text-gray-600">Quick questions and support</p>
-                <a href="https://wa.me/15555555555" class="text-cnb-primary font-semibold hover:underline" target="_blank">
+                <a href="https://wa.me/15613850430" class="text-cnb-primary font-semibold hover:underline" target="_blank">
                     Chat with us on WhatsApp
                 </a>
             </div>

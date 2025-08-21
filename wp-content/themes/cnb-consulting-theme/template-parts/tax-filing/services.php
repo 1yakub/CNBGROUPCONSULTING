@@ -28,7 +28,7 @@
                     <li>• E-filing with IRS</li>
                 </ul>
                 <div class="text-cnb-primary font-bold text-lg mb-4">Starting at $149</div>
-                <a href="#contact" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="<?php echo esc_url(cnb_get_cta_link('get-started')); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
                     Get Started →
                 </a>
             </div>
@@ -49,7 +49,7 @@
                     <li>• Tax planning consultation</li>
                 </ul>
                 <div class="text-cnb-primary font-bold text-lg mb-4">Starting at $399</div>
-                <a href="#contact" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="<?php echo esc_url(cnb_get_cta_link('get-started')); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
                     Get Started →
                 </a>
             </div>
@@ -67,7 +67,7 @@
                     <li>• Investment tax strategies</li>
                 </ul>
                 <div class="text-cnb-primary font-bold text-lg mb-4">Starting at $299</div>
-                <a href="#contact" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="<?php echo esc_url(cnb_get_cta_link('get-started')); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
                     Get Started →
                 </a>
             </div>
@@ -85,7 +85,7 @@
                     <li>• IRS correspondence handling</li>
                 </ul>
                 <div class="text-cnb-primary font-bold text-lg mb-4">Starting at $199</div>
-                <a href="#contact" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="<?php echo esc_url(cnb_get_cta_link('get-started')); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
                     Get Started →
                 </a>
             </div>
@@ -103,7 +103,7 @@
                     <li>• Resolution assistance</li>
                 </ul>
                 <div class="text-cnb-primary font-bold text-lg mb-4">Starting at $499</div>
-                <a href="#contact" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="<?php echo esc_url(cnb_get_cta_link('get-started')); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
                     Get Started →
                 </a>
             </div>
@@ -121,7 +121,7 @@
                     <li>• Year-end tax preparation</li>
                 </ul>
                 <div class="text-cnb-primary font-bold text-lg mb-4">$299/month</div>
-                <a href="#contact" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="<?php echo esc_url(cnb_get_cta_link('get-started')); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
                     Get Started →
                 </a>
             </div>

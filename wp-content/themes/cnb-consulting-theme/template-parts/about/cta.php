@@ -14,10 +14,10 @@
             Join hundreds of successful entrepreneurs who chose CNB Group Consulting for their business formation needs.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="<?php echo home_url('/contact'); ?>" class="bg-cnb-primary hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition transform hover:scale-105">
+            <a href="<?php echo esc_url(cnb_get_cta_link('get-started')); ?>" class="bg-cnb-primary hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition transform hover:scale-105">
                 Get Started Today
             </a>
-            <a href="<?php echo home_url('/services'); ?>" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold transition transform hover:scale-105">
+            <a href="<?php echo esc_url(cnb_get_cta_link('view-services')); ?>" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold transition transform hover:scale-105">
                 View Our Services
             </a>
         </div>

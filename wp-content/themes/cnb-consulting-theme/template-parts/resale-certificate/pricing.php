@@ -38,7 +38,7 @@
                     </li>
                 </ul>
                 
-                <a href="#" class="block w-full bg-white border-2 border-gray-300 text-gray-600 py-3 px-6 rounded-lg font-semibold hover:bg-gray-100 transition">
+                <a href="<?php echo esc_url(cnb_get_cta_link('try-diy')); ?>" target="_blank" rel="noopener" class="block w-full bg-white border-2 border-gray-300 text-gray-600 py-3 px-6 rounded-lg font-semibold hover:bg-gray-100 transition">
                     Try DIY Route
                 </a>
             </div>
@@ -85,7 +85,7 @@
                     </li>
                 </ul>
                 
-                <a href="#contact" class="block w-full bg-cnb-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="<?php echo esc_url(cnb_get_cta_link('get-started-now')); ?>" target="_blank" rel="noopener" class="block w-full bg-cnb-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition">
                     Get Started Now
                 </a>
             </div>

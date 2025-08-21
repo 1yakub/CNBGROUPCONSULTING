@@ -85,7 +85,7 @@
                     </li>
                 </ul>
                 
-                <a href="#contact" class="block w-full bg-cnb-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="<?php echo esc_url(cnb_get_cta_link('get-custom-lease')); ?>" target="_blank" rel="noopener" class="block w-full bg-cnb-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition">
                     Get Custom Lease
                 </a>
             </div>

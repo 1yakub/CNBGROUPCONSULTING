@@ -53,7 +53,7 @@ $process_steps = cnb_get_process_steps();
                 <h3 class="text-2xl font-bold text-gray-900 mb-4"><?php _e('Ready to Get Started?', 'cnb-consulting-theme'); ?></h3>
                 <p class="text-gray-600 mb-8 max-w-2xl mx-auto"><?php _e('Schedule your free consultation today and take the first step toward US business success.', 'cnb-consulting-theme'); ?></p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="bg-cnb-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
+                    <a href="<?php echo esc_url(cnb_get_cta_link('schedule')); ?>" target="_blank" rel="noopener" class="bg-cnb-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
                         <?php _e('Schedule Free Consultation', 'cnb-consulting-theme'); ?>
                     </a>
                     <a href="<?php echo esc_url(home_url('/services/')); ?>" class="border-2 border-cnb-primary text-cnb-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cnb-primary hover:text-white transition">
