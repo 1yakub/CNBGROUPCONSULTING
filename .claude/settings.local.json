@@ -15,7 +15,17 @@
       "mcp__chrome-mcp__chrome_console",
       "mcp__playwright__browser_navigate",
       "mcp__playwright__browser_snapshot",
-      "mcp__playwright__browser_take_screenshot"
+      "mcp__playwright__browser_take_screenshot",
+      "Bash(grep:*)",
+      "Bash(mysql:*)",
+      "Bash(php:*)",
+      "Bash(find:*)",
+      "Bash(dir:*)",
+      "Bash(for file in hero navigation general formation compliance legal pricing questions cta)",
+      "Bash(do echo \"=== $file.php ===\")",
+      "Bash(wc:*)",
+      "Bash(done)",
+      "WebSearch"
     ],
     "deny": []
   }
