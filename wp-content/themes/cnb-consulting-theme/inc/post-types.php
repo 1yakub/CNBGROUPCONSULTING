@@ -10,7 +10,5 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-// No custom post types needed - using hard-coded pages for services
-// All service content is managed through static page templates:
-// - page-services.php (services overview)
-// - page-company-formation.php, page-registered-agent.php, etc. (individual services)
+// No custom post types needed - using dedicated page templates for services
+// Service content is managed through specialized page templates

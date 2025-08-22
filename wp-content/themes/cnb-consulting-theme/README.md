@@ -25,7 +25,7 @@ cnb-consulting-theme/
 │   ├── css/style.css        # Optimized CSS bundle (~57KB)
 │   ├── js/main.js           # Optimized JS bundle (~42KB)
 │   └── manifest.json        # Asset manifest for WordPress
-├── assets/                   # Legacy CSS files (backward compatibility)
+├── assets/                   # Theme assets (images, blog styles)
 ├── node_modules/             # npm dependencies (gitignored)
 ├── package.json              # npm configuration
 ├── vite.config.js            # Build configuration
@@ -91,7 +91,7 @@ npm run build
 WordPress automatically loads the correct assets based on the build manifest:
 - **Production**: Optimized, minified files from `dist/`
 - **Development**: Source files from `src/` (fallback)
-- **Legacy Support**: Existing CSS files for backward compatibility
+- **Blog Pages**: Specialized styles loaded only when needed
 
 ### Performance Metrics
 
@@ -119,8 +119,8 @@ WordPress automatically loads the correct assets based on the build manifest:
 #### Theme Functions
 The `functions.php` file has been updated to:
 - Load build manifest for dynamic asset paths
-- Enqueue optimized CSS and JavaScript
-- Maintain backward compatibility
+- Enqueue optimized CSS and JavaScript  
+- Load specialized styles for blog pages when needed
 - Provide AJAX endpoints for forms
 
 #### Security Features
@@ -207,14 +207,6 @@ With:
 - ✅ Self-hosted Alpine.js
 - ✅ Optimized asset bundles
 - ✅ Professional development workflow
-
-#### Backward Compatibility
-Legacy CSS files are maintained during transition:
-- `assets/css/main.css`
-- `assets/css/components.css`
-- `assets/css/responsive.css`
-
-These can be removed once full conversion is complete.
 
 ### Senior Developer Standards Met
 

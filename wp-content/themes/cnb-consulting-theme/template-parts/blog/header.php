@@ -7,19 +7,19 @@
 ?>
 
 <!-- Page Header -->
-<header class="page-header">
-    <h1 class="page-title">
+<header class="mb-8 text-center pb-6 border-b border-gray-200">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
         <?php echo cnb_get_page_title(); ?>
     </h1>
     
     <?php if (is_home() && get_bloginfo('description')) : ?>
-        <p class="page-description">
+        <p class="text-gray-600 text-lg">
             <?php echo esc_html(get_bloginfo('description')); ?>
         </p>
     <?php endif; ?>
     
     <?php if (is_search()) : ?>
-        <p class="search-results-count">
+        <p class="text-gray-500 text-sm mt-2">
             <?php
             global $wp_query;
             printf(
@@ -34,4 +34,4 @@
             ?>
         </p>
     <?php endif; ?>
-</header><!-- .page-header -->
+</header>

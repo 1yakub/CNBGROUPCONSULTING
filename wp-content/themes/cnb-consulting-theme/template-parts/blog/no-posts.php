@@ -7,17 +7,17 @@
 ?>
 
 <!-- No Posts Found -->
-<div class="no-posts-found">
-    <header class="page-header">
-        <h1 class="page-title">
+<div class="text-center py-12">
+    <header class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-800">
             <?php _e('Nothing Found', 'cnb-consulting-theme'); ?>
         </h1>
-    </header><!-- .page-header -->
+    </header>
     
-    <div class="page-content">
+    <div class="max-w-2xl mx-auto">
         <?php if (is_home() && current_user_can('publish_posts')) : ?>
             
-            <p>
+            <p class="text-gray-600 mb-6">
                 <?php
                 printf(
                     wp_kses(
@@ -35,9 +35,9 @@
             
         <?php elseif (is_search()) : ?>
             
-            <p><?php _e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'cnb-consulting-theme'); ?></p>
+            <p class="text-gray-600 mb-6"><?php _e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'cnb-consulting-theme'); ?></p>
             
-            <div class="search-form-container">
+            <div class="max-w-md mx-auto mb-8">
                 <?php get_search_form(); ?>
             </div>
             
@@ -45,12 +45,12 @@
             
         <?php else : ?>
             
-            <p><?php _e('It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'cnb-consulting-theme'); ?></p>
+            <p class="text-gray-600 mb-6"><?php _e('It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'cnb-consulting-theme'); ?></p>
             
-            <div class="search-form-container">
+            <div class="max-w-md mx-auto">
                 <?php get_search_form(); ?>
             </div>
             
         <?php endif; ?>
-    </div><!-- .page-content -->
-</div><!-- .no-posts-found -->
+    </div>
+</div>

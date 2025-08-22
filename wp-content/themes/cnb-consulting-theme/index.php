@@ -11,8 +11,8 @@
 
 get_header(); ?>
 
-<div class="container">
-    <div class="content-area">
+<div class="container mx-auto px-4">
+    <div class="py-12 lg:py-16">
         
         <?php if (have_posts()) : ?>
             
@@ -26,8 +26,8 @@ get_header(); ?>
             
         <?php endif; ?>
         
-    </div><!-- .content-area -->
-</div><!-- .container -->
+    </div>
+</div>
 
 <?php get_template_part('template-parts/blog/cta'); ?>
 
