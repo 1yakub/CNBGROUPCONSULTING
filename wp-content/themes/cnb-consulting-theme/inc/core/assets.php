@@ -60,27 +60,13 @@ function cnb_consulting_enqueue_scripts() {
         );
     }
     
-    // Keep existing CSS files for backward compatibility during transition
-    wp_enqueue_style(
-        'cnb-consulting-legacy-main',
-        get_template_directory_uri() . '/assets/css/main.css',
-        array(),
-        wp_get_theme()->get('Version')
-    );
-    
-    wp_enqueue_style(
-        'cnb-consulting-legacy-components',
-        get_template_directory_uri() . '/assets/css/components.css',
-        array('cnb-consulting-legacy-main'),
-        wp_get_theme()->get('Version')
-    );
-    
-    // Enqueue blog styles for blog/archive pages
+    // Removed legacy CSS - using Tailwind build system only
+    // Blog styles temporarily kept for blog pages (to be converted)
     if (is_home() || is_archive() || is_search()) {
         wp_enqueue_style(
             'cnb-consulting-blog',
             get_template_directory_uri() . '/assets/css/blog.css',
-            array('cnb-consulting-legacy-main'),
+            array(),
             wp_get_theme()->get('Version')
         );
     }
