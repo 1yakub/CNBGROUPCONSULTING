@@ -71,13 +71,6 @@ function cnb_consulting_enqueue_scripts() {
         );
     }
     
-    // Disabled: wp_enqueue_style(
-    //     'cnb-consulting-legacy-responsive',
-    //     get_template_directory_uri() . '/assets/css/responsive.css',
-    //     array('cnb-consulting-legacy-components'),
-    //     wp_get_theme()->get('Version')
-    // );
-    
     // Localize script for AJAX (now using build system JS)
     wp_localize_script('cnb-consulting-build-js', 'cnb_ajax', array(
         'ajax_url' => admin_url('admin-ajax.php'),
