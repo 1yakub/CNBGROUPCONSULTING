@@ -28,5 +28,6 @@
       "WebSearch"
     ],
     "deny": []
-  }
+  },
+  "enableAllProjectMcpServers": false
 }

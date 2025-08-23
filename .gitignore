@@ -1,0 +1,183 @@
+# =======================
+# CRITICAL SECURITY FILES
+# =======================
+# WordPress Configuration (CONTAINS DATABASE PASSWORDS!)
+wp-config.php
+wp-config-local.php
+wp-config-staging.php
+wp-config-production.php
+
+# Environment Files (NEVER COMMIT THESE!)
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Database Exports (MAY CONTAIN SENSITIVE DATA!)
+*.sql
+*.sql.gz
+*.sqlite
+*.db
+
+# Backup Files (MAY CONTAIN PASSWORDS!)
+*.backup
+*.bak
+backup*/
+*.old
+*.orig
+*-backup*
+backups/
+
+# API Keys and Credentials
+*-credentials.json
+*-key.json
+*.pem
+*.key
+*.cert
+*.p12
+secrets/
+credentials/
+MCP-SERVERS-BACKUP.md
+
+# =======================
+# WordPress Core
+# =======================
+.htaccess
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups-*
+wp-content/updraft/
+wp-content/w3tc-config/
+wp-content/wflogs/
+
+# WordPress Debug & Error Logs
+wp-content/debug.log
+error_log
+php_error.log
+access.log
+
+# =======================
+# Development Files
+# =======================
+# Dependencies (THOUSANDS OF FILES!)
+node_modules/
+vendor/
+bower_components/
+
+# Package Manager Lock Files
+package-lock.json
+composer.lock
+yarn.lock
+pnpm-lock.yaml
+
+# Build Output
+dist/
+build/
+out/
+compiled/
+*.min.css
+*.min.js
+*.map
+*.chunk.js
+
+# =======================
+# Logs & Monitoring
+# =======================
+*.log
+*.log.*
+logs/
+log/
+
+# =======================
+# Cache & Temporary
+# =======================
+cache/
+.cache/
+temp/
+tmp/
+*.tmp
+*.temp
+*.cache
+.parcel-cache/
+.sass-cache/
+
+# =======================
+# IDE & Editor Files
+# =======================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.editorconfig
+
+# =======================
+# OS Files
+# =======================
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+.Trash-*/
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# =======================
+# Claude Code
+# =======================
+.claude/
+
+# =======================
+# Testing & Coverage
+# =======================
+coverage/
+.nyc_output/
+test-results/
+*.test.js
+*.spec.js
+.phpunit.result.cache
+phpunit.xml
+
+# =======================
+# WordPress Specific
+# =======================
+# Plugin/Theme Archives
+*.zip
+*.tar.gz
+
+# Gravity Forms
+wp-content/uploads/gravity_forms/
+
+# WP Migrate DB
+wp-content/uploads/wp-migrate-db/
+
+# Local Development
+local-config.php
+*.local
+
+# =======================
+# Version Control
+# =======================
+.git/
+.svn/
+.hg/
+
+# =======================
+# Other Sensitive Files
+# =======================
+# SSH Keys
+id_rsa*
+id_dsa*
+*.ppk
+
+# Configuration with potential secrets
+config.local.php
+settings.local.php
+database.yml
+secrets.yml
