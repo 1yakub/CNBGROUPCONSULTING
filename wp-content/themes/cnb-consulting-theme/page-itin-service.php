@@ -18,7 +18,11 @@ get_header(); ?>
     
     <?php get_template_part('template-parts/itin-service/requirements'); ?>
     
-    <?php get_template_part('template-parts/itin-service/faq'); ?>
+    <?php get_template_part('template-parts/components/faq-section', null, array(
+        'service' => 'itin-service',
+        'title' => 'ITIN Service FAQ',
+        'subtitle' => 'Common questions about getting an ITIN'
+    )); ?>
     
     <?php get_template_part('template-parts/itin-service/cta'); ?>
 </main>

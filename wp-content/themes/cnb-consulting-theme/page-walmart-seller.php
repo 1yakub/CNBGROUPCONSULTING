@@ -16,7 +16,11 @@ get_header(); ?>
     
     <?php get_template_part('template-parts/walmart-seller/packages'); ?>
     
-    <?php get_template_part('template-parts/walmart-seller/faq'); ?>
+    <?php get_template_part('template-parts/components/faq-section', null, array(
+        'service' => 'walmart-seller',
+        'title' => 'Walmart Marketplace FAQ',
+        'subtitle' => 'Common questions about selling on Walmart'
+    )); ?>
     
     <?php get_template_part('template-parts/walmart-seller/cta'); ?>
 </main>

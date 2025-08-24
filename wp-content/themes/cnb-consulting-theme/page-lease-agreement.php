@@ -18,7 +18,11 @@ get_header(); ?>
     
     <?php get_template_part('template-parts/lease-agreement/pricing'); ?>
     
-    <?php get_template_part('template-parts/lease-agreement/faq'); ?>
+    <?php get_template_part('template-parts/components/faq-section', null, array(
+        'service' => 'lease-agreement',
+        'title' => 'Lease Agreement FAQ',
+        'subtitle' => 'Common questions about lease agreements'
+    )); ?>
     
     <?php get_template_part('template-parts/lease-agreement/cta'); ?>
 </main>

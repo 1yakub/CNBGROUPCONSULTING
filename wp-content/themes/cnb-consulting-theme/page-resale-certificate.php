@@ -20,7 +20,11 @@ get_header(); ?>
     
     <?php get_template_part('template-parts/resale-certificate/pricing'); ?>
     
-    <?php get_template_part('template-parts/resale-certificate/faq'); ?>
+    <?php get_template_part('template-parts/components/faq-section', null, array(
+        'service' => 'resale-certificate',
+        'title' => 'Resale Certificate FAQ',
+        'subtitle' => 'Common questions about resale certificates'
+    )); ?>
     
     <?php get_template_part('template-parts/resale-certificate/cta'); ?>
 </main>

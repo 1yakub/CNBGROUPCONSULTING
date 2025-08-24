@@ -39,24 +39,3 @@
         </div>
     </div>
 </section>
-
-<script>
-function toggleFAQ(targetId) {
-    const answer = document.getElementById(targetId);
-    const toggle = document.getElementById('toggle-' + targetId);
-    
-    if (answer.classList.contains('hidden')) {
-        answer.classList.remove('hidden');
-        toggle.textContent = '−';
-    } else {
-        answer.classList.add('hidden');
-        toggle.textContent = '+';
-    }
-}
-
-// Form handling
-document.getElementById('itin-application-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you! Our ITIN specialist will contact you within 2 hours to discuss your application.');
-});
-</script>

@@ -44,10 +44,6 @@
     @apply ring-4 ring-cnb-secondary transform scale-105;
   }
   
-  .cnb-faq-item {
-    @apply border-b border-gray-200 last:border-b-0;
-  }
-  
   .cnb-service-feature {
     @apply flex items-start space-x-3 p-4 rounded-lg hover:bg-gray-50 transition-colors duration-200;
   }

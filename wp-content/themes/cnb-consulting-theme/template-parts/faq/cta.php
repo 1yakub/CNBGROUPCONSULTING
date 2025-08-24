@@ -1,6 +1,6 @@
 <?php
 /**
- * FAQ CTA Section with JavaScript Functionality
+ * FAQ CTA Section
  * 
  * @package CNB_Consulting_Theme
  */
@@ -23,43 +23,3 @@
         </div>
     </div>
 </section>
-
-<script>
-function showCategory(category) {
-    // Hide all categories
-    const categories = document.querySelectorAll('.faq-category');
-    categories.forEach(cat => cat.classList.add('hidden'));
-    
-    // Show selected category
-    document.getElementById(category).classList.remove('hidden');
-    
-    // Update navigation buttons
-    const navBtns = document.querySelectorAll('.faq-nav-btn');
-    navBtns.forEach(btn => {
-        btn.classList.remove('bg-cnb-primary', 'text-white');
-        btn.classList.add('bg-white', 'text-cnb-primary', 'border-2', 'border-cnb-primary');
-    });
-    
-    // Highlight active button
-    event.target.classList.remove('bg-white', 'text-cnb-primary', 'border-2', 'border-cnb-primary');
-    event.target.classList.add('bg-cnb-primary', 'text-white');
-}
-
-function toggleFAQ(targetId) {
-    const answer = document.getElementById(targetId);
-    const toggle = document.getElementById('toggle-' + targetId);
-    
-    if (answer.classList.contains('hidden')) {
-        answer.classList.remove('hidden');
-        toggle.textContent = '−';
-    } else {
-        answer.classList.add('hidden');
-        toggle.textContent = '+';
-    }
-}
-
-// Initialize with general category selected
-document.addEventListener('DOMContentLoaded', function() {
-    showCategory('general');
-});
-</script>

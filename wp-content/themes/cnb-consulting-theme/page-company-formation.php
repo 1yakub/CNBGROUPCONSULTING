@@ -18,7 +18,11 @@ get_header(); ?>
     
     <?php get_template_part('template-parts/company-formation/testimonials'); ?>
     
-    <?php get_template_part('template-parts/company-formation/faq'); ?>
+    <?php get_template_part('template-parts/components/faq-section', null, array(
+        'service' => 'company-formation',
+        'title' => 'Company Formation FAQ',
+        'subtitle' => 'Common questions about forming your business'
+    )); ?>
     
     <?php get_template_part('template-parts/company-formation/cta'); ?>
 </main>

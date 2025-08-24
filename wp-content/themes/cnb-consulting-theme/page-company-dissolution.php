@@ -16,7 +16,11 @@ get_header(); ?>
     
     <?php get_template_part('template-parts/company-dissolution/pricing'); ?>
     
-    <?php get_template_part('template-parts/company-dissolution/faq'); ?>
+    <?php get_template_part('template-parts/components/faq-section', null, array(
+        'service' => 'company-dissolution',
+        'title' => 'Company Dissolution FAQ',
+        'subtitle' => 'Common questions about dissolving your business'
+    )); ?>
     
     <?php get_template_part('template-parts/company-dissolution/cta'); ?>
 </main>

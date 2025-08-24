@@ -26,3 +26,7 @@ require_once get_template_directory() . '/inc/functions/placeholder-content.php'
 
 // Load schema & SEO functions
 require_once get_template_directory() . '/inc/functions/schema-seo.php';
+
+// Load FAQ functions
+require_once get_template_directory() . '/inc/functions/content/faq-data.php';
+require_once get_template_directory() . '/inc/functions/faq-schema.php';

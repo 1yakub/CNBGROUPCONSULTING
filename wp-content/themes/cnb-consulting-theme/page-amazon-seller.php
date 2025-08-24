@@ -22,7 +22,11 @@ get_header(); ?>
     get_template_part('template-parts/amazon-seller/benefits');
     
     // FAQ Section
-    get_template_part('template-parts/amazon-seller/faq');
+    get_template_part('template-parts/components/faq-section', null, array(
+        'service' => 'amazon-seller',
+        'title' => 'Amazon Seller FAQ',
+        'subtitle' => 'Common questions about starting and scaling your Amazon business'
+    ));
     
     // CTA Section with JavaScript
     get_template_part('template-parts/amazon-seller/cta');

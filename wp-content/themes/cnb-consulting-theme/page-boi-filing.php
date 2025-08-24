@@ -25,7 +25,12 @@ get_header(); ?>
     get_template_part('template-parts/boi-filing/pricing');
     
     // FAQ section
-    get_template_part('template-parts/boi-filing/faq');
+    get_template_part('template-parts/components/faq-section', null, array(
+        'service' => 'boi-filing',
+        'title' => 'BOI Filing FAQ',
+        'subtitle' => 'Common questions about Beneficial Ownership Information filing',
+        'bg_color' => 'bg-white'
+    ));
     
     // CTA section with JavaScript
     get_template_part('template-parts/boi-filing/cta');

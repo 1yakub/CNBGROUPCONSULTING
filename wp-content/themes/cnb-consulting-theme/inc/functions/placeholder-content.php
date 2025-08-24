@@ -17,4 +17,4 @@ require_once get_template_directory() . '/inc/functions/content/hero-content.php
 require_once get_template_directory() . '/inc/functions/content/services-content.php';
 require_once get_template_directory() . '/inc/functions/content/testimonials-content.php';
 require_once get_template_directory() . '/inc/functions/content/process-content.php';
-require_once get_template_directory() . '/inc/functions/content/faq-content.php';
+// FAQ content is now loaded via faq-data.php when needed

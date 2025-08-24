@@ -12,7 +12,18 @@ get_header(); ?>
     
     <?php get_template_part('template-parts/contact/form'); ?>
     
-    <?php get_template_part('template-parts/contact/faq'); ?>
+    <?php get_template_part('template-parts/components/faq-section', null, array(
+        'service' => 'contact',
+        'title' => 'Contact FAQ',
+        'subtitle' => 'Common questions about our services and how we can help'
+    )); ?>
+    
+    <!-- View All FAQs Link -->
+    <div class="text-center pb-16">
+        <a href="<?php echo home_url('/faq'); ?>" class="text-cnb-primary hover:underline font-semibold text-lg">
+            View All FAQs →
+        </a>
+    </div>
 </main>
 
 <?php get_footer(); ?>

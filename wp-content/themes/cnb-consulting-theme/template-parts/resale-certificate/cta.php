@@ -33,19 +33,6 @@
 </section>
 
 <script>
-function toggleFAQ(targetId) {
-    const answer = document.getElementById(targetId);
-    const toggle = document.getElementById('toggle-' + targetId);
-    
-    if (answer.classList.contains('hidden')) {
-        answer.classList.remove('hidden');
-        toggle.textContent = '−';
-    } else {
-        answer.classList.add('hidden');
-        toggle.textContent = '+';
-    }
-}
-
 function calculateSavings() {
     const monthlyPurchases = parseFloat(document.getElementById('monthly-purchases').value) || 0;
     const taxRate = parseFloat(document.getElementById('tax-rate').value) || 0.08;

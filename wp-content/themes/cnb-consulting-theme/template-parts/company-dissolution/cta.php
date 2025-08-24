@@ -31,24 +31,3 @@
         </div>
     </div>
 </section>
-
-<script>
-function toggleFAQ(targetId) {
-    const answer = document.getElementById(targetId);
-    const toggle = document.getElementById('toggle-' + targetId);
-    
-    if (answer.classList.contains('hidden')) {
-        answer.classList.remove('hidden');
-        toggle.textContent = '−';
-    } else {
-        answer.classList.add('hidden');
-        toggle.textContent = '+';
-    }
-}
-
-// Form handling
-document.getElementById('dissolution-assessment-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you! Our business dissolution specialist will contact you within 2 hours to discuss your closure plan.');
-});
-</script>
