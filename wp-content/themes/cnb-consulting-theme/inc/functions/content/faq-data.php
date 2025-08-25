@@ -74,4 +74,3 @@ function cnb_get_faq_categories()
     return array_keys(cnb_get_all_faqs());
 }
 
-// Backward compatibility function removed - use cnb_get_faqs('homepage') directly

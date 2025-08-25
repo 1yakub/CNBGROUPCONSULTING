@@ -44,7 +44,7 @@ function cnb_consulting_enqueue_scripts()
             );
         }
     } else {
-        // Fallback to development assets if build doesn't exist
+
         wp_enqueue_style(
             'cnb-consulting-dev-css',
             get_template_directory_uri() . '/src/style.css',
@@ -61,7 +61,7 @@ function cnb_consulting_enqueue_scripts()
         );
     }
 
-    // Localize script for AJAX (now using build system JS)
+
     wp_localize_script('cnb-consulting-build-js', 'cnb_ajax', array(
         'ajax_url' => admin_url('admin-ajax.php'),
         'nonce' => wp_create_nonce('cnb_ajax_nonce'),

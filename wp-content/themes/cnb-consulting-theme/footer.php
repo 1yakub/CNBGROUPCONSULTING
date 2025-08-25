@@ -9,40 +9,41 @@
  * @package CNB_Consulting_Theme
  */
 
-// Include the fallback menu function
+
 require_once get_template_directory() . '/template-parts/footer/fallback-menu.php';
 ?>
 
-    </main><!-- #main -->
+</main><!-- #main -->
 
-    <footer id="colophon" class="bg-slate-900 text-white mt-auto">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <?php get_template_part('template-parts/footer/social-bar'); ?>
+<footer id="colophon" class="bg-slate-900 text-white mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <!-- Main Footer Content -->
-            <div class="py-12">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    
-                    <?php get_template_part('template-parts/footer/company-info'); ?>
-                    
-                    <?php get_template_part('template-parts/footer/legal-services'); ?>
-                    
-                    <?php get_template_part('template-parts/footer/important-links'); ?>
-                    
-                    <?php get_template_part('template-parts/footer/contact-info'); ?>
+        <?php get_template_part('template-parts/footer/social-bar'); ?>
 
-                </div><!-- .footer-widgets -->
-            </div><!-- .footer-main -->
+        <!-- Main Footer Content -->
+        <div class="py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-            <?php get_template_part('template-parts/footer/copyright'); ?>
+                <?php get_template_part('template-parts/footer/company-info'); ?>
 
-        </div><!-- .container -->
-    </footer><!-- #colophon -->
+                <?php get_template_part('template-parts/footer/legal-services'); ?>
+
+                <?php get_template_part('template-parts/footer/important-links'); ?>
+
+                <?php get_template_part('template-parts/footer/contact-info'); ?>
+
+            </div><!-- .footer-widgets -->
+        </div><!-- .footer-main -->
+
+        <?php get_template_part('template-parts/footer/copyright'); ?>
+
+    </div><!-- .container -->
+</footer><!-- #colophon -->
 
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>

@@ -46,6 +46,6 @@
         <main id="main" class="flex-1">
 
             <?php
-            // Include the fallback menu functions
+
             require_once get_template_directory() . '/template-parts/header/menu-fallback.php';
             ?>

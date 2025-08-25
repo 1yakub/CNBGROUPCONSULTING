@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
  */
 function cnb_create_all_pages()
 {
-    // To force recreation: delete_option('cnb_pages_created');
+
 
     // Only run once
     if (get_option('cnb_pages_created')) {

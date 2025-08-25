@@ -16,7 +16,7 @@
         <?php get_template_part('template-parts/header/skip-link'); ?>
 
         <?php
-        // Include the fallback menu functions BEFORE they're needed
+
         require_once get_template_directory() . '/template-parts/header/menu-fallback.php';
         ?>
 

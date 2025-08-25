@@ -7,7 +7,7 @@
  * @package CNB_Consulting_Theme
  */
 
-// FAQ functions now loaded centrally via template-functions.php
+
 ?>
 
 <section class="py-16 lg:py-24 bg-white">
@@ -23,11 +23,11 @@
         </header>
 
         <?php
-        // Use the new FAQ accordion component
+
         get_template_part('template-parts/components/faq-accordion', null, array(
             'faqs' => cnb_get_faqs('homepage'),
             'id' => 'homepage-faq',
-            'show_schema' => false, // Schema might be handled elsewhere on homepage
+            'show_schema' => false,
             'show_categories' => false
         ));
         ?>
