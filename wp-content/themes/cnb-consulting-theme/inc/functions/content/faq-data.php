@@ -49,21 +49,56 @@ function cnb_get_all_faqs()
 }
 
 /**
+ * Load single FAQ category - optimized version
+ * Only loads the specific file needed instead of all 16 files
+ */
+function cnb_get_single_faq_category($category)
+{
+    static $loaded = array();
+    
+    // Return cached if exists
+    if (isset($loaded[$category])) {
+        return $loaded[$category];
+    }
+    
+    // Security: Validate category format
+    if (!preg_match('/^[a-z0-9-]+$/', $category)) {
+        $loaded[$category] = false;
+        return false;
+    }
+    
+    $file = get_template_directory() . '/inc/functions/content/faqs/' . $category . '.php';
+    
+    if (file_exists($file)) {
+        $data = include $file;
+        if (is_array($data) && isset($data['title']) && isset($data['items'])) {
+            $loaded[$category] = $data;
+            return $data;
+        }
+    }
+    
+    $loaded[$category] = false;
+    return false;
+}
+
+/**
  * Get FAQs for specific category
+ * Optimized to load only the needed file instead of all 16
  */
 function cnb_get_faqs($category)
 {
-    $all_faqs = cnb_get_all_faqs();
-    return isset($all_faqs[$category]) ? $all_faqs[$category]['items'] : array();
+    $data = cnb_get_single_faq_category($category);
+    return ($data && isset($data['items'])) ? $data['items'] : array();
 }
 
 /**
  * Get FAQ category title
+ * Optimized to load only the needed file instead of all 16
  */
 function cnb_get_faq_category_title($category)
 {
-    $all_faqs = cnb_get_all_faqs();
-    return isset($all_faqs[$category]) ? $all_faqs[$category]['title'] : '';
+    $data = cnb_get_single_faq_category($category);
+    return ($data && isset($data['title'])) ? $data['title'] : '';
 }
 
 /**
