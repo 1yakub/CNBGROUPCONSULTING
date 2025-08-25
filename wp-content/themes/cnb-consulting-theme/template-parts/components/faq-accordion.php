@@ -38,14 +38,16 @@ if ($show_schema && !empty($faqs)) {
                 <h3 class="text-lg font-semibold text-gray-900 pr-4">
                     <?php echo esc_html($question); ?>
                 </h3>
-                <svg class="w-5 h-5 text-cnb-primary transition-transform duration-200 flex-shrink-0"
+                <svg class="w-5 h-5 text-cnb-primary transition-transform duration-300 flex-shrink-0"
                     :class="{'rotate-180': isOpen('<?php echo esc_attr($faq_id); ?>')}" fill="none" stroke="currentColor"
                     viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
             </button>
-            <div x-show="isOpen('<?php echo esc_attr($faq_id); ?>')" x-collapse <?php echo $index === 0 ? 'x-init="$el._x_isShown = true"' : ''; ?> class="px-6 pb-6 text-gray-600 leading-relaxed">
-                <p><?php echo esc_html($answer); ?></p>
+            <div x-show="isOpen('<?php echo esc_attr($faq_id); ?>')" x-collapse>
+                <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                    <p><?php echo esc_html($answer); ?></p>
+                </div>
             </div>
         </div>
     <?php endforeach; ?>

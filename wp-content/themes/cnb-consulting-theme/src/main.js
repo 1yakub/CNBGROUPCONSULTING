@@ -23,11 +23,7 @@ Alpine.data("faqSystem", () => ({
   activeItems: {},
 
   toggleItem(id) {
-    if (this.activeItems[id]) {
-      delete this.activeItems[id];
-    } else {
-      this.activeItems[id] = true;
-    }
+    this.activeItems[id] = !this.activeItems[id];
   },
 
   setCategory(category) {
@@ -37,7 +33,7 @@ Alpine.data("faqSystem", () => ({
   },
 
   isOpen(id) {
-    return this.activeItems[id] || false;
+    return !!this.activeItems[id];
   },
 
   isActiveCategory(category) {
