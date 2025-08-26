@@ -25,7 +25,7 @@ if ($show_schema && !empty($faqs)) {
 ?>
 
 <!-- Simple FAQ Accordion -->
-<div x-data="faqSystem" class="space-y-4 faq-component">
+<div x-data="faqSystem" class="space-y-4">
     <?php foreach ($faqs as $index => $faq):
         $faq_id = $component_id . '-' . ($index + 1);
         // Handle both array formats

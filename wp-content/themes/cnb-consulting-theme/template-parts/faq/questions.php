@@ -25,7 +25,7 @@ echo cnb_output_faq_schema($all_items);
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- FAQ with Categories -->
-        <div x-data="faqSystem" class="faq-component">
+        <div x-data="faqSystem">
 
             <!-- Category Navigation -->
             <div class="mb-8 sticky top-0 bg-white z-10 py-4">

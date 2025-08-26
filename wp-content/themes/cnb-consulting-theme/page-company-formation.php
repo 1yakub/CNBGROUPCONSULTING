@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<main id="primary" class="site-main">
+<main id="primary" >
     <?php get_template_part('template-parts/company-formation/hero'); ?>
     
     <?php get_template_part('template-parts/company-formation/benefits'); ?>

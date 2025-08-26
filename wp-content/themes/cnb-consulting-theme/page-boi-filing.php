@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<main id="primary" class="site-main">
+<main id="primary" >
     <?php 
     // Hero Section with form
     get_template_part('template-parts/boi-filing/hero');

@@ -19,6 +19,5 @@ if (!defined('ABSPATH')) {
 
 // Load all image helper components
 require_once get_template_directory() . '/inc/image-helpers/core-functions.php';
-require_once get_template_directory() . '/inc/image-helpers/placeholder-functions.php';
 require_once get_template_directory() . '/inc/image-helpers/image-library.php';
 require_once get_template_directory() . '/inc/image-helpers/documentation.php';

@@ -7,14 +7,11 @@
 ?>
 
 <script>
-    // Contact form handling
     document.getElementById('contact-form').addEventListener('submit', function (e) {
         e.preventDefault();
 
-        // Get form data
         const formData = new FormData(this);
 
-        // Show loading state
         const submitBtn = this.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
         submitBtn.innerHTML = '<span>Sending...</span>';

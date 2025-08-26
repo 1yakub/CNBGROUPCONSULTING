@@ -11,13 +11,13 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Get optimized image with fallback to placeholder
+ * Get optimized image
  */
 function cnb_get_image($image_key, $size = 'full', $attributes = array()) {
     $images = cnb_get_image_library();
     
     if (!isset($images[$image_key])) {
-        return cnb_get_placeholder_image($size, $attributes);
+        return ''; // Return empty if image not found
     }
     
     $image_data = $images[$image_key];
@@ -49,11 +49,10 @@ function cnb_get_bg_image($image_key, $overlay_opacity = 0.6, $overlay_color = '
     $images = cnb_get_image_library();
     
     if (!isset($images[$image_key])) {
-        $bg_url = cnb_get_placeholder_bg_url();
-    } else {
-        $bg_url = $images[$image_key]['url'];
+        return ''; // Return empty if image not found
     }
     
+    $bg_url = $images[$image_key]['url'];
     $overlay = $overlay_color . $overlay_opacity . ')';
     
     return 'style="background: linear-gradient(' . $overlay . ', ' . $overlay . '), url(\'' . esc_url($bg_url) . '\'); background-size: cover; background-position: center; background-repeat: no-repeat;"';

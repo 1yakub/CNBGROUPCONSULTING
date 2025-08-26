@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<main id="primary" class="site-main">
+<main id="primary" >
     <?php get_template_part('template-parts/company-dissolution/hero'); ?>
     
     <?php get_template_part('template-parts/company-dissolution/importance'); ?>

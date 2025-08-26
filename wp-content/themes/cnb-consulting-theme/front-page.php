@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-<div class="homepage-container">
+<div>
     
     
     <!-- Hero Section -->

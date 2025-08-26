@@ -1,142 +1,73 @@
-# CNB Consulting Theme - Development Guide
+# CNB Theme - Context for Claude
 
-This file provides guidance for working with the CNB Group Consulting WordPress theme.
+This file provides theme-specific context when working in the theme directory.
+For WordPress/project setup, see root CLAUDE.md.
 
-## Theme Overview
+## Theme Build Commands
 
-Custom WordPress theme for CNB Group Consulting with modern build system using Vite, Tailwind CSS, and Alpine.js.
+When working in this directory, use these commands directly:
 
-## Build System
-
-- **Bundler**: Vite 4.4.5
-- **CSS Framework**: Tailwind CSS 3.3.3
-- **JavaScript Framework**: Alpine.js 3.12.1
-- **Package Manager**: npm
-
-## Build Commands
-
-### Install Dependencies
 ```bash
-npm install
+npm install           # Install dependencies
+npm run dev          # Dev server with hot reload
+npm run build:dev    # Production build
+npm run css:build    # Rebuild CSS only
 ```
 
-### Development Server (with hot reload)
-```bash
-npm run dev
-```
-
-### Build for Production
-```bash
-npm run build:dev
-```
-*Note: Use `build:dev` instead of `build` on Windows to avoid NODE_ENV issues*
-
-### Build CSS Only
-```bash
-npm run css:build
-```
-
-### Watch CSS Changes
-```bash
-npm run css:watch
-```
-
-### Clean Build Directory
-```bash
-npm run clean
-```
-
-## File Structure
+## Theme File Structure
 
 ```
-cnb-consulting-theme/
-├── assets/
-│   ├── css/           # Compiled CSS files
-│   └── js/            # JavaScript files
-├── dist/              # Built assets (generated)
+├── src/             # Source files
 │   ├── css/
-│   ├── js/
-│   └── manifest.json
-├── inc/               # PHP includes
-├── src/               # Source files
-│   ├── css/
-│   ├── main.js
-│   └── style.css
-├── template-parts/    # Reusable template components
-├── package.json       # Dependencies and scripts
-├── tailwind.config.js # Tailwind configuration
-├── vite.config.js     # Vite build configuration
-└── *.php             # WordPress template files
+│   │   └── main.css     # Tailwind components (106 lines)
+│   ├── style.css        # More Tailwind components (109 lines)
+│   └── main.js          # Alpine.js initialization
+├── dist/            # Built assets (52KB CSS, 44KB JS)
+├── inc/             # PHP functionality
+│   ├── core/            # Theme setup, assets, security
+│   ├── functions/       # Helper functions
+│   ├── admin/           # Admin functionality
+│   └── customizer/      # Customizer options
+├── template-parts/  # Reusable components
+│   └── [service]/       # Service-specific partials
+└── page-*.php       # Page templates (17 files)
 ```
 
-## Development Guidelines
+## Component Patterns
 
-### CSS Development
-- **ALWAYS use Tailwind CSS classes** - NEVER write custom CSS
-- Maximum 100 lines total in custom.css file
-- Use Tailwind utilities for all styling
-- Follow mobile-first responsive design
+### Alpine.js Components
+- FAQ accordion: `x-data="faqSystem"`
+- Mobile menu: `x-data="{ mobileMenuOpen: false }"`
+- Dropdowns: `x-show` with `x-collapse`
 
-### JavaScript Development
-- Use Alpine.js for interactive components
-- Keep JavaScript minimal and functional
-- Follow WordPress coding standards
+### Tailwind Patterns
+- Responsive: `sm:`, `md:`, `lg:`, `xl:` breakpoints
+- Forms: Focus states with `focus:ring-2 focus:ring-cnb-primary`
+- Cards: `bg-white rounded-lg shadow-lg hover:shadow-xl`
 
-### PHP Development
-- Follow WordPress coding standards
-- Use standard WordPress functions only
-- Test templates immediately after creation
-- Ensure mobile responsiveness
+## Template Hierarchy
 
-## Theme Features
+```
+page-[service].php → template-parts/[service]/
+                     ├── hero.php
+                     ├── services.php
+                     ├── packages.php
+                     ├── benefits.php
+                     └── cta.php
+```
 
-### Completed Features
-- ✅ Premium button hover effects with Tailwind utilities
-- ✅ FAQ accordion functionality
-- ✅ Responsive design across all pages
-- ✅ Modern build system with Vite
-- ✅ Tailwind CSS integration
-- ✅ Alpine.js components
+## PHP Helpers Available
 
-### Build Output
-- **CSS**: ~72KB minified (~11KB gzipped)
-- **JavaScript**: ~44KB minified (~16KB gzipped)
-- **Build time**: ~13 seconds
+```php
+cnb_get_company_name()     # Returns company name
+cnb_get_company_phone()    # Returns phone number
+cnb_get_faqs($category)    # Get FAQs by category
+cnb_output_faq_schema()    # Output FAQ schema markup
+```
 
-## Quality Standards
+## Important Notes
 
-- Working code > impressive code
-- Use proven libraries and WordPress standards
-- Avoid overengineering
-- Focus on businessglobalizer.com patterns
-- Reject bloated or complex solutions
-
-## Troubleshooting
-
-### Common Issues
-1. **NODE_ENV errors on Windows**: Use `npm run build:dev` instead of `npm run build`
-2. **CSS not updating**: Run `npm run css:build` to rebuild Tailwind CSS
-3. **JavaScript errors**: Check console and ensure Alpine.js is loaded
-
-### Build Verification
-After building, verify these files exist:
-- `dist/css/style.css`
-- `dist/js/main.js`
-- `dist/manifest.json`
-
-## Dependencies
-
-### Production Dependencies
-- `alpinejs`: ^3.12.1
-- `@heroicons/react`: ^2.2.0
-
-### Development Dependencies
-- `vite`: ^4.4.5
-- `tailwindcss`: ^3.3.3
-- `@tailwindcss/forms`: ^0.5.4
-- `@tailwindcss/typography`: ^0.5.16
-- `@alpinejs/collapse`: ^3.14.9
-- `autoprefixer`: ^10.4.14
-- `postcss`: ^8.4.24
-- `cssnano`: ^6.0.1
-- `tailwind-scrollbar`: ^3.1.0
+- All CSS uses Tailwind utilities (no custom CSS)
+- Contact forms need WordPress nonce/sanitization (TODO)
+- Image helpers in `inc/image-helpers/`
+- Schema markup via `inc/functions/schema-seo.php`
