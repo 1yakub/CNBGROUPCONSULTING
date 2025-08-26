@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for Registered Agent Service Page
+ * Template Name: Service - Registered Agent
+ * Description: Template for the Registered Agent service page
  * 
  * @package CNB_Consulting_Theme
  */

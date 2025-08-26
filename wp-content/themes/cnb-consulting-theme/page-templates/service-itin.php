@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for ITIN Service Page
+ * Template Name: Service - ITIN
+ * Description: Template for the ITIN Service page
  * 
  * @package CNB_Consulting_Theme
  */

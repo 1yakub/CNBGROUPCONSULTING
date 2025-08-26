@@ -15,11 +15,8 @@ get_header(); ?>
         
         <?php get_template_part('template-parts/services/formation-services'); ?>
         
-        <?php get_template_part('template-parts/services/legal-documents'); ?>
         
         <?php get_template_part('template-parts/services/compliance-services'); ?>
-        
-        <?php get_template_part('template-parts/services/licenses-protection'); ?>
         
     <?php get_template_part('template-parts/services/outro'); ?>
     

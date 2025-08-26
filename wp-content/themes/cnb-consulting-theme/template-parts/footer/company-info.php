@@ -24,14 +24,14 @@ $contact_info = cnb_get_contact_info();
         ?>
             <a href="<?php echo esc_url(home_url('/')); ?>" class="inline-block mb-4">
                 <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/footer-logo.png'); ?>" 
-                     alt="CNB Group Consulting" 
+                     alt="<?php echo esc_attr($company_info['name']); ?>" 
                      class="h-14 md:h-16 w-auto">
             </a>
         <?php } ?>
     </div>
     
     <p class="text-slate-300 leading-relaxed">
-        CNB Group Consulting is a one-stop solution for your global business expansion. Helps to form your company in the US, UK, & UAE, set up business bank accounts and payment gateways, unlock eCommerce doors, and file your taxes.
+        <?php echo esc_html($company_info['name']); ?> is a one-stop solution for your global business expansion. Helps to form your company in the US, UK, & UAE, set up business bank accounts and payment gateways, unlock eCommerce doors, and file your taxes.
     </p>
     
 </div>

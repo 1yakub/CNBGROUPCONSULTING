@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for US Lease Agreement Service Page
+ * Template Name: Service - Lease Agreement
+ * Description: Template for the US Lease Agreement service page
  * 
  * @package CNB_Consulting_Theme
  */

@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for Contact Page
+ * Template Name: Contact
+ * Description: Template for the Contact page
  * 
  * @package CNB_Consulting_Theme
  */

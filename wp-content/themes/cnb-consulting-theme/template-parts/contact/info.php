@@ -4,6 +4,9 @@
  * 
  * @package CNB_Consulting_Theme
  */
+
+// Get contact information
+$contact_info = cnb_get_contact_info();
 ?>
 
 <!-- Contact Information -->
@@ -24,8 +27,8 @@
             <div>
                 <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
                 <p class="text-gray-600">Send us a message for immediate assistance</p>
-                <a href="mailto:cnbgroupconsultingllc@gmail.com" class="text-cnb-primary font-semibold hover:underline">
-                    cnbgroupconsultingllc@gmail.com
+                <a href="<?php echo esc_url(cnb_get_cta_link('email')); ?>" class="text-cnb-primary font-semibold hover:underline">
+                    <?php echo esc_html($contact_info['email']); ?>
                 </a>
             </div>
         </div>
@@ -38,8 +41,7 @@
                 <h3 class="font-semibold text-gray-900 mb-1">Address</h3>
                 <p class="text-gray-600">Visit us at our office</p>
                 <p class="text-cnb-primary font-semibold">
-                    5681 Boynton Bay Cir<br>
-                    Boynton Beach, FL 33437
+                    <?php echo nl2br(esc_html($contact_info['address'])); ?>
                 </p>
             </div>
         </div>
@@ -51,7 +53,7 @@
             <div>
                 <h3 class="font-semibold text-gray-900 mb-1">WhatsApp</h3>
                 <p class="text-gray-600">Quick questions and support</p>
-                <a href="https://wa.me/15613850430" class="text-cnb-primary font-semibold hover:underline" target="_blank">
+                <a href="<?php echo esc_url(cnb_get_cta_link('whatsapp')); ?>" class="text-cnb-primary font-semibold hover:underline" target="_blank">
                     Chat with us on WhatsApp
                 </a>
             </div>
@@ -64,9 +66,7 @@
             <div>
                 <h3 class="font-semibold text-gray-900 mb-1">Business Hours</h3>
                 <div class="text-gray-600 space-y-1">
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM EST</p>
-                    <p>Saturday: 10:00 AM - 4:00 PM EST</p>
-                    <p>Sunday: Closed</p>
+                    <p><?php echo esc_html($contact_info['business_hours']); ?></p>
                 </div>
             </div>
         </div>

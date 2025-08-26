@@ -4,6 +4,9 @@
  * 
  * @package CNB_Consulting_Theme
  */
+
+// Get contact information
+$contact_info = cnb_get_contact_info();
 ?>
 
 <!-- CTA Section -->
@@ -17,7 +20,7 @@
             <a href="<?php echo esc_url(cnb_get_cta_link('contact-us')); ?>" class="bg-cnb-primary hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition transform hover:scale-105">
                 Contact Us Today
             </a>
-            <a href="mailto:cnbgroupconsultingllc@gmail.com" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold transition transform hover:scale-105">
+            <a href="<?php echo esc_url(cnb_get_cta_link('email')); ?>" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold transition transform hover:scale-105">
                 Email Us
             </a>
         </div>

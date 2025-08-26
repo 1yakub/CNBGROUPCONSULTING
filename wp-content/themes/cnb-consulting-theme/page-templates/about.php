@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for About Page
+ * Template Name: About Us
+ * Description: Template for the About Us page
  * 
  * @package CNB_Consulting_Theme
  */

@@ -85,5 +85,20 @@ function cnb_customizer_contact_info($wp_customize) {
         'type'     => 'text',
         'priority' => 50,
     ));
+
+    // Calendly Booking URL
+    $wp_customize->add_setting('cnb_calendly_url', array(
+        'default'           => 'https://calendly.com/cnbgroupconsultingllc/30min',
+        'sanitize_callback' => 'esc_url_raw',
+        'transport'         => 'refresh',
+    ));
+
+    $wp_customize->add_control('cnb_calendly_url', array(
+        'label'       => __('Calendly Booking URL', 'cnb-consulting-theme'),
+        'description' => __('Your Calendly scheduling link used for all booking buttons', 'cnb-consulting-theme'),
+        'section'     => 'cnb_contact_info',
+        'type'        => 'url',
+        'priority'    => 60,
+    ));
 }
 add_action('customize_register', 'cnb_customizer_contact_info', 10);

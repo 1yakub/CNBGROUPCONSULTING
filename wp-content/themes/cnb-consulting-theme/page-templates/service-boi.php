@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for BOI Filing Service Page
+ * Template Name: Service - BOI
+ * Description: Template for the BOI Filing service page
  * 
  * @package CNB_Consulting_Theme
  */

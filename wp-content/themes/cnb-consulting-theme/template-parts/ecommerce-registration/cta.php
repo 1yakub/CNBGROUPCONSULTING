@@ -1,3 +1,14 @@
+<?php
+/**
+ * E-commerce Registration CTA Section
+ * 
+ * @package CNB_Consulting_Theme
+ */
+
+// Get contact information
+$contact_info = cnb_get_contact_info();
+?>
+
 <!-- CTA Section -->
 <section id="contact" class="py-16 bg-gradient-to-br from-cnb-primary to-blue-900 text-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -7,11 +18,11 @@
         </p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a href="mailto:cnbgroupconsultingllc@gmail.com" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-bold transition transform hover:scale-105">
+            <a href="<?php echo esc_url(cnb_get_cta_link('email')); ?>" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-bold transition transform hover:scale-105">
                 Email Us
             </a>
-            <a href="mailto:cnbgroupconsultingllc@gmail.com" class="bg-white bg-opacity-10 text-white border-2 border-white border-opacity-30 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-20 transition">
-                Email: cnbgroupconsultingllc@gmail.com
+            <a href="<?php echo esc_url(cnb_get_cta_link('email')); ?>" class="bg-white bg-opacity-10 text-white border-2 border-white border-opacity-30 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-20 transition">
+                Email: <?php echo esc_html($contact_info['email']); ?>
             </a>
         </div>
 

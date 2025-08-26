@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for US Resale Certificate Service Page
+ * Template Name: Service - Resale Certificate
+ * Description: Template for the US Resale Certificate service page
  * 
  * @package CNB_Consulting_Theme
  */

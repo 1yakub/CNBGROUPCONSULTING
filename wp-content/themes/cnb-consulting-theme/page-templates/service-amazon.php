@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for Amazon Seller Service Page
+ * Template Name: Service - Amazon
+ * Description: Template for the Amazon Seller service page
  * 
  * @package CNB_Consulting_Theme
  */

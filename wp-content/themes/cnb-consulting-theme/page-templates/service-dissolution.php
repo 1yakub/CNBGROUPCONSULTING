@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for Company Dissolution Service Page
+ * Template Name: Service - Dissolution
+ * Description: Template for the Company Dissolution service page
  * 
  * @package CNB_Consulting_Theme
  */

@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for Walmart Seller Service Page
+ * Template Name: Service - Walmart
+ * Description: Template for the Walmart Seller service page
  * 
  * @package CNB_Consulting_Theme
  */

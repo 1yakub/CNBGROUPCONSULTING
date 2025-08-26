@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for Tax Filing Service Page
+ * Template Name: Service - Tax Filing
+ * Description: Template for the Tax Filing service page
  * 
  * @package CNB_Consulting_Theme
  */

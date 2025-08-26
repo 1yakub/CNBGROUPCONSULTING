@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for Company Formation Service Page
+ * Template Name: Service - Company Formation
+ * Description: Template for the Company Formation service page
  * 
  * @package CNB_Consulting_Theme
  */

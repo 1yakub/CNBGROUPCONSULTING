@@ -26,7 +26,7 @@ return array(
         ),
         array(
             'question' => 'What\'s included in the formation package?',
-            'answer' => 'Our packages include state filing, EIN number, operating agreement or bylaws, registered agent service, compliance calendar, and ongoing support. Premium packages add bank account setup, business licenses, and trademark filing.'
+            'answer' => 'Our packages include state filing, EIN number application, registered agent service for the first year, compliance calendar, and ongoing support. Premium packages add expedited processing and dedicated account management.'
         )
     )
 );

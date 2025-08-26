@@ -17,11 +17,11 @@ if (!defined('ABSPATH')) {
  */
 function cnb_get_contact_info() {
     return array(
-        'phone' => cnb_get_customizer_value('cnb_phone', '+1 (561) 385-0430'),
-        'email' => cnb_get_customizer_value('cnb_email', 'cnbgroupconsultingllc@gmail.com'),
-        'whatsapp' => cnb_get_customizer_value('cnb_whatsapp', '+1 (561) 385-0430'),
-        'address' => cnb_get_customizer_value('cnb_address', '5681 Boynton Bay Cir, Boynton Beach, FL 33437'),
-        'business_hours' => cnb_get_customizer_value('cnb_business_hours', 'Monday - Friday: 9:00 AM - 6:00 PM EST'),
+        'phone' => cnb_get_customizer_value('cnb_phone_number', '+1 (561) 385-0430'),
+        'email' => cnb_get_customizer_value('cnb_email', 'contact@cnbgroupconsulting.com'),
+        'whatsapp' => cnb_get_customizer_value('cnb_whatsapp_number', '+1 (561) 385-0430'),
+        'address' => cnb_get_customizer_value('cnb_address', "2101 VISTA PARK STE 217\nWest palm beach, Fl 33411"),
+        'business_hours' => cnb_get_customizer_value('cnb_office_hours', 'Monday - Friday: 9:00 AM - 6:00 PM EST'),
         'timezone' => 'EST',
         'calendly' => cnb_get_customizer_value('cnb_calendly_url', 'https://calendly.com/cnbgroupconsultingllc/30min')
     );

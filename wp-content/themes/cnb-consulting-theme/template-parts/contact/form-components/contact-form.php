@@ -44,7 +44,6 @@
                     <option value="llc">LLC Formation</option>
                     <option value="corporation">Corporation Formation</option>
                     <option value="partnership">Partnership Formation</option>
-                    <option value="nonprofit">Nonprofit Formation</option>
                     <option value="existing">Existing Business Services</option>
                     <option value="other">Other</option>
                 </select>
@@ -58,10 +57,6 @@
                     <option value="business-formation">Business Formation</option>
                     <option value="registered-agent">Registered Agent</option>
                     <option value="ein-number">EIN Number</option>
-                    <option value="business-license">Business License</option>
-                    <option value="operating-agreement">Operating Agreement</option>
-                    <option value="annual-report">Annual Report</option>
-                    <option value="trademark">Trademark</option>
                     <option value="consultation">Free Consultation</option>
                     <option value="other">Other</option>
                 </select>

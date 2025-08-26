@@ -10,7 +10,7 @@ return array(
     'items' => array(
         array(
             'question' => 'What services does CNB Group Consulting offer?',
-            'answer' => 'We offer comprehensive business services including business formation (LLC, Corporation, Nonprofit), legal document preparation, registered agent services, compliance management, trademark registration, business licenses, and ongoing business consulting.'
+            'answer' => 'We offer comprehensive business services including business formation (LLC, Corporation), registered agent services, EIN number services, ITIN services, and specialized support for Amazon sellers and e-commerce businesses.'
         ),
         array(
             'question' => 'How long has CNB Group Consulting been in business?',

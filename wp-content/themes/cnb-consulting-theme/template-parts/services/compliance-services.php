@@ -18,27 +18,11 @@
                 <li>• Available in all 50 states</li>
             </ul>
             <div class="text-cnb-primary font-bold text-lg mb-4">$99/year</div>
-            <a href="<?php echo home_url('/services/registered-agent'); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+            <a href="<?php echo home_url('/services/registered-agent/'); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
                 Learn More →
             </a>
         </div>
 
-        <!-- Annual Report -->
-        <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow">
-            <div class="text-4xl mb-4">📊</div>
-            <h4 class="text-xl font-bold text-gray-900 mb-3">Annual Report Filing</h4>
-            <p class="text-gray-600 mb-4">Professional annual report preparation and filing to maintain good standing.</p>
-            <ul class="text-sm text-gray-600 space-y-1 mb-6">
-                <li>• Timely filing guarantee</li>
-                <li>• Deadline monitoring</li>
-                <li>• State fee included</li>
-                <li>• Good standing maintenance</li>
-            </ul>
-            <div class="text-cnb-primary font-bold text-lg mb-4">$149 + state fees</div>
-            <a href="<?php echo home_url('/services/annual-report'); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-                Learn More →
-            </a>
-        </div>
 
         <!-- EIN Application -->
         <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow">
@@ -52,7 +36,7 @@
                 <li>• Digital delivery</li>
             </ul>
             <div class="text-cnb-primary font-bold text-lg mb-4">$99</div>
-            <a href="<?php echo home_url('/services/ein-number'); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+            <a href="<?php echo home_url('/services/ein-service/'); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
                 Learn More →
             </a>
         </div>

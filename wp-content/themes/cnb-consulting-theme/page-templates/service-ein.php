@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for EIN Service Page
+ * Template Name: Service - EIN
+ * Description: Template for the EIN Service page
  * 
  * @package CNB_Consulting_Theme
  */

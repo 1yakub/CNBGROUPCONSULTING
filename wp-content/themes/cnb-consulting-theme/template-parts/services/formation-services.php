@@ -18,7 +18,7 @@
                 <li>• All 50 states available</li>
             </ul>
             <div class="text-cnb-primary font-bold text-lg mb-4">Starting at $299</div>
-            <a href="<?php echo home_url('/services/llc-formation'); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+            <a href="<?php echo home_url('/services/company-formation/'); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
                 Learn More →
             </a>
         </div>
@@ -35,26 +35,10 @@
                 <li>• Stock options available</li>
             </ul>
             <div class="text-cnb-primary font-bold text-lg mb-4">Starting at $399</div>
-            <a href="<?php echo home_url('/services/corporation-formation'); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+            <a href="<?php echo home_url('/services/company-formation/'); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
                 Learn More →
             </a>
         </div>
 
-        <!-- Nonprofit Formation -->
-        <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow">
-            <div class="text-4xl mb-4">❤️</div>
-            <h4 class="text-xl font-bold text-gray-900 mb-3">Nonprofit Formation</h4>
-            <p class="text-gray-600 mb-4">501(c)(3) nonprofit formation with tax-exempt status and donation eligibility.</p>
-            <ul class="text-sm text-gray-600 space-y-1 mb-6">
-                <li>• Tax-exempt status</li>
-                <li>• Accept tax-deductible donations</li>
-                <li>• Grant eligibility</li>
-                <li>• IRS application assistance</li>
-            </ul>
-            <div class="text-cnb-primary font-bold text-lg mb-4">Starting at $799</div>
-            <a href="<?php echo home_url('/services/nonprofit-formation'); ?>" class="inline-block bg-cnb-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-                Learn More →
-            </a>
-        </div>
     </div>
 </div>

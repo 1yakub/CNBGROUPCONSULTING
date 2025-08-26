@@ -9,6 +9,9 @@
 if (!defined('ABSPATH')) {
     exit;
 }
+
+// Get contact information from centralized source
+$contact_info = cnb_get_contact_info();
 ?>
 
 <!-- Contact Information -->
@@ -23,24 +26,24 @@ if (!defined('ABSPATH')) {
     <div class="space-y-4">
         <div class="flex items-start space-x-3">
             <svg class="w-5 h-5 text-cnb-secondary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
             </svg>
             <div>
                 <p class="text-sm text-slate-400">Email:</p>
-                <a href="mailto:cnbgroupconsultingllc@gmail.com" class="text-slate-300 hover:text-cnb-secondary transition-colors duration-200 font-medium">
-                    cnbgroupconsultingllc@gmail.com
+                <a href="<?php echo esc_url(cnb_get_cta_link('email')); ?>" class="text-slate-300 hover:text-cnb-secondary transition-colors duration-200 font-medium">
+                    <?php echo esc_html($contact_info['email']); ?>
                 </a>
             </div>
         </div>
         
         <div class="flex items-start space-x-3">
             <svg class="w-5 h-5 text-cnb-secondary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
             </svg>
             <div>
                 <p class="text-sm text-slate-400">Phone:</p>
-                <a href="tel:+15613850430" class="text-slate-300 hover:text-cnb-secondary transition-colors duration-200 font-medium">
-                    +1 (561) 385-0430
+                <a href="<?php echo esc_url(cnb_get_cta_link('phone')); ?>" class="text-slate-300 hover:text-cnb-secondary transition-colors duration-200 font-medium">
+                    <?php echo esc_html($contact_info['phone']); ?>
                 </a>
             </div>
         </div>
@@ -52,8 +55,7 @@ if (!defined('ABSPATH')) {
             <div>
                 <p class="text-sm text-slate-400">Address:</p>
                 <address class="text-slate-300 not-italic leading-relaxed">
-                    5681 Boynton Bay Cir<br>
-                    Boynton Beach, FL 33437
+                    <?php echo nl2br(esc_html($contact_info['address'])); ?>
                 </address>
             </div>
         </div>

@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for FAQ Page
+ * Template Name: FAQ
+ * Description: Template for the Frequently Asked Questions page
  * 
  * @package CNB_Consulting_Theme
  */

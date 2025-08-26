@@ -69,5 +69,4 @@ cnb_output_faq_schema()    # Output FAQ schema markup
 
 - All CSS uses Tailwind utilities (no custom CSS)
 - Contact forms need WordPress nonce/sanitization (TODO)
-- Image helpers in `inc/image-helpers/`
 - Schema markup via `inc/functions/schema-seo.php`

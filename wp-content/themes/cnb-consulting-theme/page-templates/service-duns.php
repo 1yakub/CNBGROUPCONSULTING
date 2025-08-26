@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for DUNS Number Service Page
+ * Template Name: Service - DUNS
+ * Description: Template for the DUNS Number service page
  * 
  * @package CNB_Consulting_Theme
  */

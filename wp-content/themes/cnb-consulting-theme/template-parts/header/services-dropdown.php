@@ -74,7 +74,7 @@
         );
 
         foreach ($services as $slug => $service) {
-            echo '<a href="' . esc_url(home_url('/' . $slug . '/')) . '" class="flex items-center space-x-3 px-6 py-4 text-sm font-semibold text-slate-700 hover:bg-slate-900 hover:text-white transition-all duration-200 border-b border-slate-100 last:border-b-0 first:rounded-t-xl last:rounded-b-xl group">';
+            echo '<a href="' . esc_url(home_url('/services/' . $slug . '/')) . '" class="flex items-center space-x-3 px-6 py-4 text-sm font-semibold text-slate-700 hover:bg-slate-900 hover:text-white transition-all duration-200 border-b border-slate-100 last:border-b-0 first:rounded-t-xl last:rounded-b-xl group">';
             echo '<svg class="w-5 h-5 text-slate-500 group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">';
             echo $service['icon'];
             echo '</svg>';

@@ -1,6 +1,7 @@
 <?php
 /**
- * Template for E-commerce Registration Service Page
+ * Template Name: Service - E-Commerce
+ * Description: Template for the E-commerce Registration service page
  * 
  * @package CNB_Consulting_Theme
  */
