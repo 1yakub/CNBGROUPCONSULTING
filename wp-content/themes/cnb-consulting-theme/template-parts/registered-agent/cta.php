@@ -47,10 +47,3 @@ $contact_info = cnb_get_contact_info();
     </div>
 </section>
 
-<script>
-// Form handling
-document.getElementById('registered-agent-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you! We\'ll set up your registered agent service within 24 hours and send you confirmation details.');
-});
-</script>

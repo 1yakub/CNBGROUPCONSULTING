@@ -6,7 +6,7 @@
  */
 ?>
 
-<div class="space-y-8">
+<div class="space-y-8 text-center">
     <div>
         <div class="inline-block bg-cnb-secondary text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-4">
             📬 Required by Law in All 50 States
@@ -19,7 +19,7 @@
         </p>
     </div>
     
-    <div class="flex flex-col sm:flex-row gap-4">
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="<?php echo esc_url(cnb_get_cta_link('start-service')); ?>" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-bold transition transform hover:scale-105 text-center">
             Start Service - $99/Year
         </a>

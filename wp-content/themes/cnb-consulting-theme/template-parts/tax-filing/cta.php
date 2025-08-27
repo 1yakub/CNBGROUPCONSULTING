@@ -79,10 +79,4 @@ function calculateSavings() {
     document.getElementById('calculator-placeholder').classList.add('hidden');
     document.getElementById('calculator-results').classList.remove('hidden');
 }
-
-// Form handling
-document.getElementById('tax-consultation-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you! Our tax expert will contact you within 2 hours to schedule your consultation.');
-});
 </script>

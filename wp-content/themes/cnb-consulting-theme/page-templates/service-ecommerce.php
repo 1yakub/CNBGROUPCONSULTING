@@ -11,8 +11,6 @@ get_header(); ?>
 <main id="primary" >
     <?php get_template_part('template-parts/ecommerce-registration/hero'); ?>
     
-    <?php get_template_part('template-parts/ecommerce-registration/form'); ?>
-    
     <?php get_template_part('template-parts/ecommerce-registration/platforms'); ?>
     
     <?php get_template_part('template-parts/ecommerce-registration/pricing'); ?>

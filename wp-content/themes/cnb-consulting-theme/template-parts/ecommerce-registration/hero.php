@@ -1,7 +1,7 @@
 <!-- Hero Section -->
 <section class="relative bg-gradient-to-br from-cnb-primary to-blue-900 text-white py-16 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="text-center max-w-4xl mx-auto">
             <div class="space-y-8">
                 <div>
                     <div class="inline-block bg-cnb-secondary text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-4">
@@ -15,7 +15,7 @@
                     </p>
                 </div>
                 
-                <div class="flex flex-col sm:flex-row gap-4">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="<?php echo esc_url(cnb_get_cta_link('pricing')); ?>" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-bold transition transform hover:scale-105 text-center">
                         Start Selling - $199
                     </a>
@@ -42,3 +42,6 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>

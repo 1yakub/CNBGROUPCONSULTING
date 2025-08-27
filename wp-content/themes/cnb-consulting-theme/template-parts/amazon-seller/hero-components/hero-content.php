@@ -6,7 +6,7 @@
  */
 ?>
 
-<div class="space-y-8">
+<div class="space-y-8 text-center">
     <div>
         <div class="inline-block bg-cnb-secondary text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-4">
             🚀 Amazon FBA Specialists
@@ -19,7 +19,7 @@
         </p>
     </div>
     
-    <div class="flex flex-col sm:flex-row gap-4">
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="#packages" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-bold transition transform hover:scale-105 text-center">
             Start Selling - $599
         </a>

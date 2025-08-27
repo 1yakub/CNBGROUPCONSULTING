@@ -43,10 +43,3 @@ $contact_info = cnb_get_contact_info();
     </div>
 </section>
 
-<script>
-// Form handling
-document.getElementById('duns-application-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you! Our business credit specialist will contact you within 1 hour to process your DUNS application.');
-});
-</script>

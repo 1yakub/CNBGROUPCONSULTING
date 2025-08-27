@@ -70,9 +70,4 @@ function calculateSavings() {
     `;
 }
 
-// Form handling
-document.getElementById('resale-application-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you! Our tax specialist will contact you within 1 hour with your savings estimate and certificate details.');
-});
 </script>

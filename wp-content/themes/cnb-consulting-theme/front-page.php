@@ -19,9 +19,6 @@ get_header(); ?>
     <!-- Services Overview -->
     <?php get_template_part('template-parts/homepage/services-overview'); ?>
     
-    <!-- Rate Request Form -->
-    <?php get_template_part('template-parts/homepage/rate-request-form'); ?>
-    
     <!-- Company Statistics -->
     <?php get_template_part('template-parts/homepage/stats-section'); ?>
     
