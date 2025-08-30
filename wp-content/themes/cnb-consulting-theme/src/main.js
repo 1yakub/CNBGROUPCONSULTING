@@ -185,29 +185,6 @@ Alpine.data("scrollSpy", () => ({
   },
 }));
 
-Alpine.data("animateOnScroll", () => ({
-  init() {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-in-up");
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-      }
-    );
-
-    // Observe all elements with data-animate attribute
-    document.querySelectorAll("[data-animate]").forEach((el) => {
-      observer.observe(el);
-    });
-  },
-}));
-
 // Initialize Alpine
 window.Alpine = Alpine;
 Alpine.start();
@@ -227,6 +204,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Initialize scroll animations
-  Alpine.data("animateOnScroll")().init();
 });

@@ -31,7 +31,7 @@ $contact_info = cnb_get_contact_info();
     </div>
     
     <p class="text-slate-300 leading-relaxed">
-        <?php echo esc_html($company_info['name']); ?> is a one-stop solution for your global business expansion. Helps to form your company in the US, UK, & UAE, set up business bank accounts and payment gateways, unlock eCommerce doors, and file your taxes.
+        <?php echo esc_html($company_info['name']); ?> is a one-stop solution for your global business expansion. Helps to form your US company, set up business bank accounts and payment gateways, unlock eCommerce doors, and file your taxes.
     </p>
     
 </div>
