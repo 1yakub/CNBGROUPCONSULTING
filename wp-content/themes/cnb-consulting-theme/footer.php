@@ -22,7 +22,7 @@ require_once get_template_directory() . '/template-parts/footer/fallback-menu.ph
 
         <!-- Main Footer Content -->
         <div class="py-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
                 <?php get_template_part('template-parts/footer/company-info'); ?>
 
