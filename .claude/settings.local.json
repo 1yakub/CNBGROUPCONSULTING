@@ -25,7 +25,8 @@
       "Bash(do echo \"=== $file.php ===\")",
       "Bash(wc:*)",
       "Bash(done)",
-      "WebSearch"
+      "WebSearch",
+      "Read(//c/Users/yakub/Downloads/cnb/**)"
     ],
     "deny": []
   },
