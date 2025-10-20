@@ -9,7 +9,7 @@ $services = cnb_get_placeholder_services();
 ?>
 
 <section class="py-16 lg:py-20 bg-slate-950">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Header -->
         <div class="flex flex-col gap-3 text-white mb-10">

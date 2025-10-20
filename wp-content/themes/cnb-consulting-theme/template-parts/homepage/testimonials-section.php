@@ -10,7 +10,7 @@
 $testimonials = cnb_get_placeholder_testimonials();
 ?>
 
-<section class="py-16 lg:py-24 bg-white">
+<!-- <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <header class="text-center mb-16">
@@ -66,4 +66,4 @@ $testimonials = cnb_get_placeholder_testimonials();
         </div>
         
     </div>
-</section>
+</section> -->
