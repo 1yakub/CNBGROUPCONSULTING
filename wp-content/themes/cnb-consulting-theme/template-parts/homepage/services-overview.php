@@ -15,7 +15,6 @@ $services = cnb_get_placeholder_services();
         <div class="flex flex-col gap-3 text-white mb-10">
             <p class="text-sm uppercase tracking-[0.35em] text-white/50">What we do</p>
             <h2 class="text-4xl md:text-5xl font-bold">Services that transform</h2>
-            <p class="text-lg text-white/70">Launch-ready systems, tailored to your next revenue milestone.</p>
         </div>
 
         <!-- Scrollable services -->

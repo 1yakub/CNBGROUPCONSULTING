@@ -20,9 +20,6 @@ $process_steps = cnb_get_process_steps();
             <h2 class="text-3xl md:text-4xl font-bold">
                 <?php _e('How We Work', 'cnb-consulting-theme'); ?>
             </h2>
-            <p class="text-lg text-white/70 mt-4">
-                <?php _e('Move from idea to launch in four guided steps designed to keep you compliant and revenue ready.', 'cnb-consulting-theme'); ?>
-            </p>
         </header>
 
         <div class="relative">

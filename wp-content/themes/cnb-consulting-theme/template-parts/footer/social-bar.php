@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 <div class="border-b border-slate-800 py-8">
     <div class="flex flex-wrap justify-center gap-6">
         <!-- Facebook -->
-        <a href="#" target="_blank" rel="noopener" 
+        <!-- <a href="#" target="_blank" rel="noopener" 
            class="group flex items-center space-x-3 bg-slate-800 hover:bg-blue-600 px-6 py-3 rounded-xl transition-all duration-300 transform hover:scale-105">
             <div class="w-8 h-8 bg-blue-600 group-hover:bg-white rounded-full flex items-center justify-center transition-colors duration-300">
                 <svg class="w-4 h-4 text-white group-hover:text-blue-600 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
@@ -23,10 +23,11 @@ if (!defined('ABSPATH')) {
                 </svg>
             </div>
             <span class="font-medium group-hover:text-blue-100 transition-colors duration-300">Facebook</span>
-        </a>
+        </a> -->
 
+     
         <!-- Twitter/X -->
-        <a href="#" target="_blank" rel="noopener" 
+        <!-- <a href="#" target="_blank" rel="noopener" 
            class="group flex items-center space-x-3 bg-slate-800 hover:bg-gray-900 px-6 py-3 rounded-xl transition-all duration-300 transform hover:scale-105">
             <div class="w-8 h-8 bg-gray-900 group-hover:bg-white rounded-full flex items-center justify-center transition-colors duration-300">
                 <svg class="w-4 h-4 text-white group-hover:text-gray-900 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
@@ -34,7 +35,7 @@ if (!defined('ABSPATH')) {
                 </svg>
             </div>
             <span class="font-medium group-hover:text-gray-100 transition-colors duration-300">Twitter</span>
-        </a>
+        </a> -->
 
         <!-- LinkedIn -->
         <a href="#" target="_blank" rel="noopener" 
@@ -58,15 +59,6 @@ if (!defined('ABSPATH')) {
             <span class="font-medium group-hover:text-green-100 transition-colors duration-300">WhatsApp</span>
         </a>
 
-        <!-- Skype -->
-        <a href="#" target="_blank" rel="noopener" 
-           class="group flex items-center space-x-3 bg-slate-800 hover:bg-sky-500 px-6 py-3 rounded-xl transition-all duration-300 transform hover:scale-105">
-            <div class="w-8 h-8 bg-sky-500 group-hover:bg-white rounded-full flex items-center justify-center transition-colors duration-300">
-                <svg class="w-4 h-4 text-white group-hover:text-sky-500 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.069 18.874c-4.023 0-5.82-1.979-5.82-3.464 0-.765.561-1.296 1.333-1.296 1.723 0 1.273 2.477 4.487 2.477 1.641 0 2.55-.895 2.55-1.811 0-.551-.269-1.16-1.354-1.429l-3.576-.895c-2.88-.724-3.403-2.286-3.403-3.751 0-3.047 2.861-4.191 5.549-4.191 2.471 0 5.393 1.373 5.393 3.199 0 .784-.688 1.24-1.453 1.24-1.469 0-1.198-2.037-4.164-2.037-1.469 0-2.292.664-2.292 1.617s1.153 1.258 2.157 1.487l2.637.587c2.891.649 3.624 2.346 3.624 3.944 0 2.476-1.902 4.324-5.668 4.324m11.084-4.882l-.029.135-.044-.24c.015.034.03.068.044.105zm-.307-1.201c.083.283.135.583.135.896 0 3.756-3.031 6.796-6.77 6.796-.921 0-1.797-.178-2.6-.507-1.225.552-2.577.815-3.977.815-5.239 0-9.485-4.26-9.485-9.516 0-1.296.271-2.517.735-3.632-.495-.804-.775-1.74-.775-2.738 0-2.834 2.295-5.132 5.119-5.132.688 0 1.34.135 1.939.375.804-.18 1.647-.27 2.514-.27 5.24 0 9.486 4.26 9.486 9.515 0 1.394-.3 2.715-.821 3.904.058.24.074.495.074.759-.001 1.607-.729 3.039-1.865 3.99.308.292.501.704.501 1.162 0 .884-.716 1.598-1.598 1.598-.303 0-.584-.085-.827-.227-.706.365-1.52.581-2.385.581-2.79 0-5.051-2.268-5.051-5.068 0-.598.103-1.174.29-1.711-.658-.934-1.040-2.067-1.040-3.287 0-3.095 2.506-5.604 5.595-5.604 3.09 0 5.596 2.51 5.596 5.604 0 .898-.211 1.747-.586 2.496"/>
-                </svg>
-            </div>
-            <span class="font-medium group-hover:text-sky-100 transition-colors duration-300">Skype</span>
-        </a>
+
     </div>
 </div>
