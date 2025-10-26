@@ -13,11 +13,12 @@ if (!defined('ABSPATH')) {
 /**
  * Get homepage services configuration
  */
-function cnb_get_placeholder_services() {
+function cnb_get_placeholder_services()
+{
     return array(
         array(
             'title' => __('BUSINESS INCORPORATION', 'cnb-consulting-theme'),
-            'description' => __('Start your US LLC in 5 days', 'cnb-consulting-theme'),
+            'description' => __('Launch Your Domestic U.S. Entity with Confidence', 'cnb-consulting-theme'),
             'price' => '$299',
             'icon' => 'building',
             'image' => 'business-incorporation.jpg',
@@ -25,7 +26,7 @@ function cnb_get_placeholder_services() {
         ),
         array(
             'title' => __('EIN SERVICE', 'cnb-consulting-theme'),
-            'description' => __('Get your federal tax ID instantly', 'cnb-consulting-theme'),
+            'description' => __('Secure your federal Employer Identification Number with expert support.', 'cnb-consulting-theme'),
             'price' => '$99',
             'icon' => 'id-card',
             'image' => 'ein-service.jpg',
@@ -33,7 +34,7 @@ function cnb_get_placeholder_services() {
         ),
         array(
             'title' => __('ITIN SERVICE', 'cnb-consulting-theme'),
-            'description' => __('Tax ID for international sellers', 'cnb-consulting-theme'),
+            'description' => __('Secure your Tax ID as a resident or non-resident—fast, compliant, reliable.', 'cnb-consulting-theme'),
             'price' => '$199',
             'icon' => 'user',
             'image' => 'itin-service.jpg',
@@ -41,7 +42,7 @@ function cnb_get_placeholder_services() {
         ),
         array(
             'title' => __('TAX PREPARATION', 'cnb-consulting-theme'),
-            'description' => __('Expert US tax filing for dropshippers', 'cnb-consulting-theme'),
+            'description' => __('Expert U.S. tax filing with full compliance support.', 'cnb-consulting-theme'),
             'price' => '$399',
             'icon' => 'calculator',
             'image' => 'tax-preparation.jpg',

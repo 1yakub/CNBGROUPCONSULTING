@@ -15,12 +15,7 @@ get_header(); ?>
         
         <?php get_template_part('template-parts/services/formation-services'); ?>
         
-        
-        <?php get_template_part('template-parts/services/compliance-services'); ?>
-        
     <?php get_template_part('template-parts/services/outro'); ?>
-    
-    <?php get_template_part('template-parts/services/process'); ?>
     
     <?php get_template_part('template-parts/services/cta'); ?>
 </main>

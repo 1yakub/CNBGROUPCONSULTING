@@ -35,8 +35,8 @@
 
                     <!-- Simple Headline -->
                     <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
-                        Your $100K business.
-                        <span class="block text-cnb-secondary">5 days away.</span>
+                    Form Your Domestic
+                        <span class="block text-cnb-secondary">U.S. Business</span>
                     </h1>
 
                     <!-- Single CTA -->
