@@ -50,7 +50,7 @@ function cnb_create_all_pages()
 
                 $created_pages[$slug] = (int) $page_id;
                 $changes_made = true;
-                error_log("Created page: {$page_data['title']} with ID: $page_id");
+                error_log("Created page: {$page_data['title']} (slug: {$slug}) with ID: $page_id");
             } else {
                 error_log("Failed to create page: {$page_data['title']}");
             }
@@ -64,6 +64,15 @@ function cnb_create_all_pages()
                     update_post_meta($existing_page->ID, '_wp_page_template', $page_data['template']);
                     $changes_made = true;
                 }
+            }
+
+            if ($slug === 'faq') {
+                error_log(sprintf(
+                    'Verified FAQ page exists (ID: %d, slug: %s, template: %s)',
+                    (int) $existing_page->ID,
+                    $existing_page->post_name,
+                    get_page_template_slug($existing_page->ID) ?: 'default'
+                ));
             }
         }
     }
