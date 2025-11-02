@@ -10,38 +10,52 @@ $contact_info = cnb_get_contact_info();
 ?>
 
 <!-- CTA Section -->
-<section id="contact" class="py-16 bg-gradient-to-br from-cnb-primary to-blue-900 text-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Start Selling on Walmart Today</h2>
-        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Diversify beyond Amazon with higher profit margins and less competition. Get approved and optimized by Walmart marketplace experts.
-        </p>
-        
-        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a href="<?php echo esc_url(cnb_get_cta_link('email')); ?>" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-bold transition transform hover:scale-105">
-                Email Us
-            </a>
-            <a href="<?php echo esc_url(cnb_get_cta_link('email')); ?>" class="bg-white bg-opacity-10 text-white border-2 border-white border-opacity-30 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-20 transition">
-                Email: <?php echo esc_html($contact_info['email']); ?>
-            </a>
-        </div>
+<section id="contact" class="py-16 lg:py-20 bg-slate-950 text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 via-white/0 to-white/10 p-10 sm:p-12 text-center backdrop-blur">
+            <div class="absolute -top-12 -left-12 h-40 w-40 rounded-full bg-cnb-secondary/20 blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 h-48 w-48 rounded-full bg-blue-200/20 blur-3xl"></div>
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
-            <div class="bg-white bg-opacity-10 rounded-lg p-4">
-                <div class="text-2xl mb-2">🎯</div>
-                <div class="font-semibold text-sm">Approval Strategy</div>
+            <p class="relative inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-white/70 mb-6">
+                <span class="h-2 w-2 rounded-full bg-cnb-secondary"></span>
+                <?php _e('Walmart launch partner', 'cnb-consulting-theme'); ?>
+            </p>
+
+            <h2 class="relative text-3xl md:text-4xl font-bold leading-tight mb-4">
+                <?php _e('Let’s map your Walmart marketplace playbook', 'cnb-consulting-theme'); ?>
+            </h2>
+
+            <p class="relative text-lg text-white/75 max-w-3xl mx-auto mb-10">
+                <?php _e('Meet with our Walmart strategists to review your catalog, compliance needs, and growth targets so you can launch with confidence and stay ahead of the buy box.', 'cnb-consulting-theme'); ?>
+            </p>
+
+            <div class="relative flex flex-col sm:flex-row gap-4 justify-center mb-10">
+                <a href="<?php echo esc_url(cnb_get_cta_link('schedule')); ?>" class="inline-flex items-center justify-center px-10 py-4 rounded-full bg-cnb-secondary text-slate-950 text-lg font-semibold hover:bg-cnb-secondary/90 transition">
+                    <?php _e('Book a call', 'cnb-consulting-theme'); ?>
+                </a>
             </div>
-            <div class="bg-white bg-opacity-10 rounded-lg p-4">
-                <div class="text-2xl mb-2">💰</div>
-                <div class="font-semibold text-sm">Higher Margins</div>
-            </div>
-            <div class="bg-white bg-opacity-10 rounded-lg p-4">
-                <div class="text-2xl mb-2">🚀</div>
-                <div class="font-semibold text-sm">Less Competition</div>
-            </div>
-            <div class="bg-white bg-opacity-10 rounded-lg p-4">
-                <div class="text-2xl mb-2">🏪</div>
-                <div class="font-semibold text-sm">Trusted Platform</div>
+
+            <p class="relative text-sm text-white/60 mb-12">
+                <?php printf(
+                    /* translators: %s: contact email */
+                    esc_html__('Need to send documentation first? Email %s and we will coordinate your Seller Center submission.', 'cnb-consulting-theme'),
+                    '<span class="text-white">' . esc_html($contact_info['email']) . '</span>'
+                ); ?>
+            </p>
+
+            <div class="relative grid gap-4 sm:grid-cols-3 text-left">
+                <div class="rounded-2xl bg-white/5 p-5">
+                    <p class="text-sm uppercase tracking-[0.3em] text-white/50 mb-2"><?php _e('Expertise', 'cnb-consulting-theme'); ?></p>
+                    <p class="text-xl font-semibold text-white"><?php _e('Marketplace strategists & compliance leads', 'cnb-consulting-theme'); ?></p>
+                </div>
+                <div class="rounded-2xl bg-white/5 p-5">
+                    <p class="text-sm uppercase tracking-[0.3em] text-white/50 mb-2"><?php _e('Visibility', 'cnb-consulting-theme'); ?></p>
+                    <p class="text-xl font-semibold text-white"><?php _e('Live dashboard & milestone tracking', 'cnb-consulting-theme'); ?></p>
+                </div>
+                <div class="rounded-2xl bg-white/5 p-5">
+                    <p class="text-sm uppercase tracking-[0.3em] text-white/50 mb-2"><?php _e('Momentum', 'cnb-consulting-theme'); ?></p>
+                    <p class="text-xl font-semibold text-white"><?php _e('Launch, scale, and stay compliant year-round', 'cnb-consulting-theme'); ?></p>
+                </div>
             </div>
         </div>
     </div>

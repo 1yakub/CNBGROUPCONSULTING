@@ -15,16 +15,14 @@ get_header(); ?>
     
     <?php get_template_part('template-parts/resale-certificate/benefits'); ?>
     
-    <?php get_template_part('template-parts/resale-certificate/calculator'); ?>
-    
     <?php get_template_part('template-parts/resale-certificate/process'); ?>
-    
-    <?php get_template_part('template-parts/resale-certificate/pricing'); ?>
     
     <?php get_template_part('template-parts/components/faq-section', null, array(
         'service' => 'resale-certificate',
         'title' => 'Resale Certificate FAQ',
-        'subtitle' => 'Common questions about resale certificates'
+        'subtitle' => 'Common questions about resale certificates',
+        'variant' => 'dark',
+        'label' => __('Support', 'cnb-consulting-theme')
     )); ?>
     
     <?php get_template_part('template-parts/resale-certificate/cta'); ?>

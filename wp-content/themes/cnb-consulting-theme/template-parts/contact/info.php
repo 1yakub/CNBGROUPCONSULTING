@@ -11,73 +11,51 @@ $contact_info = cnb_get_contact_info();
 
 <!-- Contact Information -->
 <div class="space-y-8">
-    <div>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Get In Touch</h2>
-        <p class="text-lg text-gray-600 leading-relaxed">
-            Ready to start your business or need help with existing compliance? Our expert team is here to provide personalized guidance and professional service.
+    <div class="space-y-4">
+        <h2 class="text-2xl md:text-3xl font-semibold text-slate-950"><?php _e('Get in touch', 'cnb-consulting-theme'); ?></h2>
+        <p class="text-base text-slate-600 md:text-lg">
+            <?php _e('Our specialists align your launch, compliance, and tax roadmap. Share your goals and we’ll craft a tailored approach before the call.', 'cnb-consulting-theme'); ?>
         </p>
     </div>
 
-    <!-- Contact Methods -->
-    <div class="space-y-6">
-        <div class="flex items-start space-x-4">
-            <div class="w-12 h-12 bg-cnb-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-white text-xl">📧</span>
-            </div>
+    <div class="space-y-4">
+        <div class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-cnb-secondary/15 text-xl">📧</span>
             <div>
-                <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
-                <p class="text-gray-600">Send us a message for immediate assistance</p>
-                <a href="<?php echo esc_url(cnb_get_cta_link('email')); ?>" class="text-cnb-primary font-semibold hover:underline">
+                <p class="text-xs uppercase tracking-[0.3em] text-slate-500"><?php _e('Email', 'cnb-consulting-theme'); ?></p>
+                <a href="<?php echo esc_url(cnb_get_cta_link('email')); ?>" class="text-base font-semibold text-slate-900 hover:text-cnb-primary">
                     <?php echo esc_html($contact_info['email']); ?>
                 </a>
             </div>
         </div>
 
-        <div class="flex items-start space-x-4">
-            <div class="w-12 h-12 bg-cnb-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-white text-xl">📍</span>
-            </div>
+        <div class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-cnb-secondary/15 text-xl">💬</span>
             <div>
-                <h3 class="font-semibold text-gray-900 mb-1">Address</h3>
-                <p class="text-gray-600">Visit us at our office</p>
-                <p class="text-cnb-primary font-semibold">
-                    <?php echo nl2br(esc_html($contact_info['address'])); ?>
-                </p>
-            </div>
-        </div>
-
-        <div class="flex items-start space-x-4">
-            <div class="w-12 h-12 bg-cnb-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-white text-xl">💬</span>
-            </div>
-            <div>
-                <h3 class="font-semibold text-gray-900 mb-1">WhatsApp</h3>
-                <p class="text-gray-600">Quick questions and support</p>
-                <a href="<?php echo esc_url(cnb_get_cta_link('whatsapp')); ?>" class="text-cnb-primary font-semibold hover:underline" target="_blank">
-                    Chat with us on WhatsApp
+                <p class="text-xs uppercase tracking-[0.3em] text-slate-500"><?php _e('WhatsApp', 'cnb-consulting-theme'); ?></p>
+                <a href="<?php echo esc_url(cnb_get_cta_link('whatsapp')); ?>" target="_blank" rel="noopener" class="text-base font-semibold text-slate-900 hover:text-cnb-primary">
+                    <?php _e('Chat with us instantly', 'cnb-consulting-theme'); ?>
                 </a>
             </div>
         </div>
 
-        <div class="flex items-start space-x-4">
-            <div class="w-12 h-12 bg-cnb-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-white text-xl">🕒</span>
-            </div>
+        <div class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-cnb-secondary/15 text-xl">📍</span>
             <div>
-                <h3 class="font-semibold text-gray-900 mb-1">Business Hours</h3>
-                <div class="text-gray-600 space-y-1">
-                    <p><?php echo esc_html($contact_info['business_hours']); ?></p>
-                </div>
+                <p class="text-xs uppercase tracking-[0.3em] text-slate-500"><?php _e('HQ', 'cnb-consulting-theme'); ?></p>
+                <p class="text-base font-semibold text-slate-900">
+                    <?php echo nl2br(esc_html($contact_info['address'])); ?>
+                </p>
             </div>
         </div>
     </div>
 
-    <!-- Guarantee Badge -->
-    <div class="bg-gradient-to-r from-cnb-secondary to-yellow-400 rounded-lg p-6 text-center">
-        <div class="text-4xl mb-4">🛡️</div>
-        <h3 class="text-xl font-bold text-gray-900 mb-2">100% Satisfaction Guarantee</h3>
-        <p class="text-gray-700">
-            We stand behind our work with a complete money-back guarantee. Your success is our commitment.
-        </p>
+    <div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_24px_60px_-45px_rgba(15,23,42,0.35)]">
+        <div class="absolute -top-10 -right-6 h-24 w-24 rounded-full bg-cnb-secondary/15 blur-2xl"></div>
+        <div class="relative space-y-2">
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-500"><?php _e('Guarantee', 'cnb-consulting-theme'); ?></p>
+            <p class="text-base font-semibold text-slate-900"><?php _e('100% satisfaction or your fee refunded—no questions asked.', 'cnb-consulting-theme'); ?></p>
+            <p class="text-sm text-slate-600"><?php _e('We document every milestone and keep you informed so you always know the status of filings, approvals, and next actions.', 'cnb-consulting-theme'); ?></p>
+        </div>
     </div>
 </div>

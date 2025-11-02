@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide Alpine elements until initialized */
+[x-cloak] {
+  display: none !important;
+}
+
 /* CNB Brand Custom Components */
 @layer components {
   .cnb-btn-primary {

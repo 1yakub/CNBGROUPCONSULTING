@@ -15,12 +15,12 @@ get_header(); ?>
     
     <?php get_template_part('template-parts/ein-service/process'); ?>
     
-    <?php get_template_part('template-parts/ein-service/pricing'); ?>
-    
     <?php get_template_part('template-parts/components/faq-section', null, array(
         'service' => 'ein-service',
         'title' => 'Frequently Asked Questions',
-        'subtitle' => 'Everything you need to know about getting an EIN'
+        'subtitle' => 'Everything you need to know about getting an EIN',
+        'variant' => 'dark',
+        'label' => __('Support', 'cnb-consulting-theme')
     )); ?>
     
     <?php get_template_part('template-parts/ein-service/cta'); ?>

@@ -18,7 +18,9 @@ get_header(); ?>
     get_template_part('template-parts/components/faq-section', null, array(
         'service' => 'amazon-seller',
         'title' => 'Amazon Seller FAQ',
-        'subtitle' => 'Common questions about starting and scaling your Amazon business'
+        'subtitle' => 'Common questions about starting and scaling your Amazon business',
+        'variant' => 'dark',
+        'label' => __('Support', 'cnb-consulting-theme')
     ));
     
     get_template_part('template-parts/amazon-seller/cta');

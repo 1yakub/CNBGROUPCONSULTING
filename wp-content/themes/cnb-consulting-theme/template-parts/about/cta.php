@@ -7,19 +7,53 @@
 ?>
 
 <!-- CTA Section -->
-<section class="py-16 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Start Your Business?</h2>
-        <p class="text-xl text-gray-600 mb-8">
-            Join hundreds of successful entrepreneurs who chose CNB Group Consulting for their business formation needs.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="<?php echo esc_url(cnb_get_cta_link('get-started')); ?>" class="bg-cnb-primary hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition transform hover:scale-105">
-                Get Started Today
-            </a>
-            <a href="<?php echo esc_url(cnb_get_cta_link('view-services')); ?>" class="bg-cnb-secondary hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold transition transform hover:scale-105">
-                View Our Services
-            </a>
+<section id="about-cta" class="py-16 lg:py-20 bg-slate-950 text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 via-white/0 to-white/10 p-10 sm:p-12 text-center backdrop-blur">
+            <div class="absolute -top-12 -left-12 h-40 w-40 rounded-full bg-cnb-secondary/20 blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 h-48 w-48 rounded-full bg-blue-200/20 blur-3xl"></div>
+
+            <p class="relative inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-white/70 mb-6">
+                <span class="h-2 w-2 rounded-full bg-cnb-secondary"></span>
+                <?php _e('Let’s team up', 'cnb-consulting-theme'); ?>
+            </p>
+
+            <h2 class="relative text-3xl md:text-4xl font-bold leading-tight mb-4">
+                <?php _e('Plan your next business milestone with CNB operator pods.', 'cnb-consulting-theme'); ?>
+            </h2>
+
+            <p class="relative text-lg text-white/75 max-w-3xl mx-auto mb-10">
+                <?php _e('We will map entity strategy, compliance checkpoints, and growth pathways tailored to your launch or expansion goals.', 'cnb-consulting-theme'); ?>
+            </p>
+
+            <div class="relative flex flex-col sm:flex-row gap-4 justify-center mb-10">
+                <a href="<?php echo esc_url(cnb_get_cta_link('schedule')); ?>" class="inline-flex items-center justify-center px-10 py-4 rounded-full bg-cnb-secondary text-slate-950 text-lg font-semibold hover:bg-cnb-secondary/90 transition">
+                    <?php _e('Book a call', 'cnb-consulting-theme'); ?>
+                </a>
+            </div>
+
+            <p class="relative text-sm text-white/60 mb-12">
+                <?php printf(
+                    /* translators: %s: contact email */
+                    esc_html__('Prefer email? Share your roadmap with %s and we will align the right specialists.', 'cnb-consulting-theme'),
+                    '<span class="text-white">' . esc_html(cnb_get_contact_info()['email']) . '</span>'
+                ); ?>
+            </p>
+
+            <div class="relative grid gap-4 sm:grid-cols-3 text-left">
+                <div class="rounded-2xl bg-white/5 p-5">
+                    <p class="text-sm uppercase tracking-[0.3em] text-white/50 mb-2"><?php _e('Scope', 'cnb-consulting-theme'); ?></p>
+                    <p class="text-xl font-semibold text-white"><?php _e('Formation, compliance, tax, marketplace', 'cnb-consulting-theme'); ?></p>
+                </div>
+                <div class="rounded-2xl bg-white/5 p-5">
+                    <p class="text-sm uppercase tracking-[0.3em] text-white/50 mb-2"><?php _e('Visibility', 'cnb-consulting-theme'); ?></p>
+                    <p class="text-xl font-semibold text-white"><?php _e('Unified dashboard orchestration', 'cnb-consulting-theme'); ?></p>
+                </div>
+                <div class="rounded-2xl bg-white/5 p-5">
+                    <p class="text-sm uppercase tracking-[0.3em] text-white/50 mb-2"><?php _e('Momentum', 'cnb-consulting-theme'); ?></p>
+                    <p class="text-xl font-semibold text-white"><?php _e('24/7 operator support pods', 'cnb-consulting-theme'); ?></p>
+                </div>
+            </div>
         </div>
     </div>
 </section>

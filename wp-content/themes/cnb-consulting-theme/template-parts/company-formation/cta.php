@@ -26,14 +26,19 @@ $contact_info = cnb_get_contact_info();
                 <?php _e('Join hundreds of founders who trusted CNB Group for compliant formation, automated systems, and a revenue-ready launch plan.', 'cnb-consulting-theme'); ?>
             </p>
 
-            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
                 <a href="<?php echo esc_url(cnb_get_cta_link('schedule')); ?>" class="inline-flex items-center justify-center px-10 py-4 rounded-full bg-cnb-secondary text-slate-950 text-lg font-semibold hover:bg-cnb-secondary/90 transition">
-                    <?php _e('Book a strategy call', 'cnb-consulting-theme'); ?>
-                </a>
-                <a href="mailto:<?php echo esc_attr($contact_info['email']); ?>" class="inline-flex items-center justify-center px-10 py-4 rounded-full border border-white/30 text-white text-lg font-semibold hover:border-white/60 transition">
-                    <?php echo esc_html($contact_info['email']); ?>
+                    <?php _e('Book a call', 'cnb-consulting-theme'); ?>
                 </a>
             </div>
+
+            <p class="text-sm text-white/60 mb-12">
+                <?php printf(
+                    /* translators: %s: contact email */
+                    esc_html__('Prefer email? Reach us at %s and we will schedule your launch session.', 'cnb-consulting-theme'),
+                    '<span class="text-white">' . esc_html($contact_info['email']) . '</span>'
+                ); ?>
+            </p>
 
             <div class="grid gap-4 sm:grid-cols-3 text-left">
                 <div class="rounded-2xl bg-white/5 p-5">

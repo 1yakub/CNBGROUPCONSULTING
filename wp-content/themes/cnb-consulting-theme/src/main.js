@@ -21,14 +21,39 @@ Alpine.data("navigation", () => ({
 Alpine.data("faqSystem", () => ({
   activeCategory: "general",
   activeItems: {},
+  items: {},
+  searchTerm: "",
+
+  init() {
+    this.$watch("activeCategory", () => {
+      this.scrollToTop();
+    });
+  },
+
+  init() {
+    this.$watch("activeCategory", () => {
+      this.scrollToTop();
+    });
+  },
+
+  registerItem(category, id, searchText = "") {
+    if (!this.items[category]) {
+      this.items[category] = [];
+    }
+
+    const exists = this.items[category].some((item) => item.id === id);
+    if (!exists) {
+      this.items[category].push({ id, search: searchText.toLowerCase() });
+    }
+  },
 
   toggleItem(id) {
     this.activeItems[id] = !this.activeItems[id];
   },
 
   setCategory(category) {
+    if (this.activeCategory === category) return;
     this.activeCategory = category;
-    // Clear active items when switching categories
     this.activeItems = {};
   },
 
@@ -38,6 +63,61 @@ Alpine.data("faqSystem", () => ({
 
   isActiveCategory(category) {
     return this.activeCategory === category;
+  },
+
+  matchesSearch(searchText) {
+    if (!this.searchTerm) return true;
+    return searchText.includes(this.searchTerm.toLowerCase());
+  },
+
+  shouldShowItem(category, id) {
+    if (!this.searchTerm) return true;
+    const list = this.items[category] || [];
+    const match = list.find((item) => item.id === id);
+    if (!match) return true;
+    return this.matchesSearch(match.search);
+  },
+
+  visibleCount(category) {
+    const list = this.items[category] || [];
+    if (!this.searchTerm) return list.length;
+    return list.filter((item) => this.matchesSearch(item.search)).length;
+  },
+
+  expandAll() {
+    const list = this.items[this.activeCategory] || [];
+    list.forEach((item) => {
+      if (this.shouldShowItem(this.activeCategory, item.id)) {
+        this.activeItems[item.id] = true;
+      }
+    });
+  },
+
+  collapseAll() {
+    const list = this.items[this.activeCategory] || [];
+    list.forEach((item) => {
+      this.activeItems[item.id] = false;
+    });
+  },
+
+  clearSearch() {
+    this.searchTerm = "";
+  },
+
+  scrollToTop() {
+    if (typeof window === "undefined") return;
+    const container = document.querySelector("[data-faq-root]");
+    if (container) {
+      container.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  },
+
+  initCategory(category) {
+    if (category) {
+      this.activeCategory = category;
+    } else if (Object.keys(this.items).length > 0) {
+      this.activeCategory = Object.keys(this.items)[0];
+    }
   },
 }));
 
